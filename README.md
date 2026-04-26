@@ -121,7 +121,7 @@ Good advancement ideas should include:
 
 ## Credits
 
-Created for the Gardnercraft Minecraft server.
+Created for the Gardnercraft Minecraft server. Created by ILLEGAL_KONG
 
 ## License
 
