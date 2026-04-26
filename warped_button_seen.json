@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "warped_button_seen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:warped_button"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "warped_button_seen"
+    ]
+  ],
+  "parent": "gardnercraft:trees_wood/root",
+  "rewards": {
+    "function": "gardnercraft:track/player_tick"
+  }
+}
