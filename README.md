@@ -157,30 +157,7 @@ If you use this datapack outside the Gardnercraft server, some server-specific a
 
 Planned future categories include:
 
-- Mining and ores
-- Farming and food
-- Adventure and exploration
-- Combat
-- Nether
-- End
-- Building
-- Armory and clothes
-- Weapons and tools
-- Animals and passive mobs
-- Monsters and hostile mobs
-- Villages and villagers
-- Colors and hues
-- Books and enchantments
-- Cooking and brewing
-- Fishing and underwater
-- Redstone and automation
-- Transportation and movement
-- Treasure and loot
-- Decoration and miscellaneous
-- Statistics and numbers
-- Illegal and hacked
-- Chain of Wonder
-- Pack-wide completion and museum-style collectible goals
+wip
 
 ## Useful Commands
 
@@ -214,7 +191,6 @@ This is a private-server passion project, so advancement ideas should fit Gardne
 
 - Fun to discover
 - Clear enough to understand
-- Challenging without becoming annoying
 - Rewarding for long-term play
 - Organized into readable category chains
 - Useful for both casual players and completionists
@@ -226,10 +202,8 @@ Good advancement ideas should include:
 - Category
 - Trigger or goal
 - Reward idea, if any
-- Whether it should be normal, challenge, super challenge, milestone, or Gardnercraft-specific
+- Whether it should be task, goal, challenge, super challenge, milestone, or gardnercraft-specific
 
 ## Credits
 
-Created for the Gardnercraft Minecraft server.
-
-Built with lots of testing, a suspicious amount of wood, and the shared belief that a server is more fun when it gives players weird little quests to chase.
+Created for the Gardnercraft Minecraft server. All Rights Reserved
