@@ -1,0 +1,53 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/planks/your_first_plank",
+    "criteria":  {
+                     "any_wood_stair":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions":  {
+                                                               "items":  [
+                                                                             {
+                                                                                 "items":  [
+                                                                                               "minecraft:oak_stairs",
+                                                                                               "minecraft:spruce_stairs",
+                                                                                               "minecraft:birch_stairs",
+                                                                                               "minecraft:jungle_stairs",
+                                                                                               "minecraft:acacia_stairs",
+                                                                                               "minecraft:dark_oak_stairs",
+                                                                                               "minecraft:mangrove_stairs",
+                                                                                               "minecraft:cherry_stairs",
+                                                                                               "minecraft:pale_oak_stairs",
+                                                                                               "minecraft:bamboo_stairs",
+                                                                                               "minecraft:bamboo_mosaic_stairs",
+                                                                                               "minecraft:crimson_stairs",
+                                                                                               "minecraft:warped_stairs"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                           }
+                                        }
+                 },
+    "requirements":  [
+                         [
+                             "any_wood_stair"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_stairs"
+                             },
+                    "title":  {
+                                  "text":  "Wood Stair",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one wood stair type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

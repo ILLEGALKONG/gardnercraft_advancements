@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/trapdoors/your_first_wood_trapdoor",
+  "criteria": {
+    "thats_enough_traps": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "thats_enough_traps"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_trapdoor"
+    },
+    "title": {
+      "text": "That's Enough Traps",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different wood trapdoor types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

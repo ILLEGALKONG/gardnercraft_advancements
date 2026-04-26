@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/the_lumberjack",
+  "criteria": {
+    "logs_complete": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "logs_complete"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/completionist"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_sapling"
+    },
+    "title": "Trees and Wood Completionist",
+    "description": {
+      "text": "Complete the current Trees and Wood chapter.",
+      "color": "gold"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

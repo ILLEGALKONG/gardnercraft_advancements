@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/stairs/wood_stair_researcher",
+  "criteria": {
+    "wood_stair_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_stair_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_stairs"
+    },
+    "title": {
+      "text": "Wood Stair Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different wood stair types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

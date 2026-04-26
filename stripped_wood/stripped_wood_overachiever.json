@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/stripped_wood/stripped_wood_collector",
+  "criteria": {
+    "stripped_wood_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "stripped_wood_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:stripped_pale_oak_wood"
+    },
+    "title": {
+      "text": "Stripped Wood Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all stripped wood types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

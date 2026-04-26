@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "unlock_trees_wood": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [["unlock_trees_wood"]],
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_log"
+    },
+    "title": {
+      "text": "Trees and Wood",
+      "color": "white"
+    },
+    "description": "The Trees and Wood Section of the Gardnercraft Advancement Pack.",
+    "background": "minecraft:gui/advancements/backgrounds/husbandry",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  }
+}

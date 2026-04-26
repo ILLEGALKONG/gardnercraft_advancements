@@ -1,0 +1,52 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/doors/your_first_wood_door",
+    "criteria":  {
+                     "any_trapdoor":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions":  {
+                                                             "items":  [
+                                                                           {
+                                                                               "items":  [
+                                                                                             "minecraft:oak_trapdoor",
+                                                                                             "minecraft:spruce_trapdoor",
+                                                                                             "minecraft:birch_trapdoor",
+                                                                                             "minecraft:jungle_trapdoor",
+                                                                                             "minecraft:acacia_trapdoor",
+                                                                                             "minecraft:dark_oak_trapdoor",
+                                                                                             "minecraft:mangrove_trapdoor",
+                                                                                             "minecraft:cherry_trapdoor",
+                                                                                             "minecraft:pale_oak_trapdoor",
+                                                                                             "minecraft:bamboo_trapdoor",
+                                                                                             "minecraft:crimson_trapdoor",
+                                                                                             "minecraft:warped_trapdoor"
+                                                                                         ]
+                                                                           }
+                                                                       ]
+                                                         }
+                                      }
+                 },
+    "requirements":  [
+                         [
+                             "any_trapdoor"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_trapdoor"
+                             },
+                    "title":  {
+                                  "text":  "Wood Trapdoor",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one wood trapdoor type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

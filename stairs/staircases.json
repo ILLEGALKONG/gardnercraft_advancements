@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/stairs/your_first_wood_stair",
+  "criteria": {
+    "staircases": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "staircases"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_stairs"
+    },
+    "title": {
+      "text": "Staircases",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different wood stair types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

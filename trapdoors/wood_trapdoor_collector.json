@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/trapdoors/wood_trapdoor_researcher",
+  "criteria": {
+    "wood_trapdoor_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_trapdoor_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_trapdoor"
+    },
+    "title": {
+      "text": "Wood Trapdoor Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different wood trapdoor types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

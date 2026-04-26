@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/trapdoors/wood_trapdoor_collector",
+  "criteria": {
+    "wood_trapdoor_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_trapdoor_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_trapdoor"
+    },
+    "title": {
+      "text": "Wood Trapdoor Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all wood trapdoor types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

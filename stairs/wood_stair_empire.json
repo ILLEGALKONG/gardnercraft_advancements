@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/stairs/wood_stair_overachiever",
+  "criteria": {
+    "total_64_stairs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_stairs"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:crimson_stairs"
+    },
+    "title": {
+      "text": "Wood Stair Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all wood stair types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

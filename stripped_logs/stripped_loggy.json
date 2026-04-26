@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/stripped_logs/your_first_stripped_log",
+  "criteria": {
+    "stripped_loggy": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "stripped_loggy"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:stripped_spruce_log"
+    },
+    "title": {
+      "text": "Buzz Loggy",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different stripped log types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

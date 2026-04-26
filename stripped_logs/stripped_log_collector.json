@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/stripped_logs/stripped_log_researcher",
+  "criteria": {
+    "stripped_log_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "stripped_log_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:stripped_dark_oak_log"
+    },
+    "title": {
+      "text": "Stripped Log Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different stripped log types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}
