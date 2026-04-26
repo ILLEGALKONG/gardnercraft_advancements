@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "pale_oak_stairs_seen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pale_oak_stairs"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pale_oak_stairs_seen"
+    ]
+  ],
+  "parent": "gardnercraft:trees_wood/root",
+  "rewards": {
+    "function": "gardnercraft:track/player_tick"
+  }
+}

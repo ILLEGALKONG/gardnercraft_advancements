@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "spruce_leaves_seen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spruce_leaves"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spruce_leaves_seen"
+    ]
+  ],
+  "parent": "gardnercraft:trees_wood/root",
+  "rewards": {
+    "function": "gardnercraft:track/player_tick"
+  }
+}

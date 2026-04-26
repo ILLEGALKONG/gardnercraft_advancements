@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "jungle_log_seen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "jungle_log_seen"
+    ]
+  ],
+  "parent": "gardnercraft:trees_wood/root",
+  "rewards": {
+    "function": "gardnercraft:track/player_tick"
+  }
+}

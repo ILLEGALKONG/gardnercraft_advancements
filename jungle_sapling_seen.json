@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "jungle_sapling_seen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_sapling"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "jungle_sapling_seen"
+    ]
+  ],
+  "parent": "gardnercraft:trees_wood/root",
+  "rewards": {
+    "function": "gardnercraft:track/player_tick"
+  }
+}
