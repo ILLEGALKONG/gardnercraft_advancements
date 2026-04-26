@@ -63,28 +63,6 @@ To install the datapack manually:
 /datapack list
 ```
 
-## Project Structure
-
-```text
-data/
-  gardnercraft/
-    advancement/
-      collectibles/
-      root/
-      server/
-      system/
-      trees_wood/
-    function/
-      grant/
-      track/
-    loot_table/
-      reward/
-  minecraft/
-    tags/
-pack.mcmeta
-README.md
-```
-
 Important conventions:
 
 - Advancement IDs use the `gardnercraft` namespace.
@@ -100,13 +78,13 @@ Most advancements are vanilla-compatible, but some Gardnercraft-specific goals m
 - The Gardnercraft server world
 - Specific server coordinates or landmarks
 - Custom Gardnercraft content added later
-- Future companion mod or resource pack support
+- Companion mod or resource pack support
 
 If you use this datapack outside the Gardnercraft server, some server-specific advancements may need to be edited or removed.
 
 ## Roadmap
 
-- Trees and Wood (In Progress) <- Project is Here
+- Trees and Wood (In Progress) <- Project Status is Here
 - Armory and Clothes (Planned)
 - Weaponry and Tools (Planned)
 - Monsters and Aggresive Mobs (Planned)
