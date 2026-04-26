@@ -22,3 +22,4 @@ scoreboard players set @s gc_tw_saplings_unique 0
 scoreboard players set @s gc_tw_logs_inventory 0
 scoreboard players set @s gc_tw_inventory_present 0
 scoreboard players set @s gc_tw_leaf_empire_ready 0
+scoreboard players set @s gc_tw_sapling_overachiever_ready 0
