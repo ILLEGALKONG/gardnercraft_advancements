@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/shelves/your_first_shelf",
+  "parent": "gardnercraft:trees_wood/root",
   "criteria": {
     "any_leaf": {
       "trigger": "minecraft:inventory_changed",

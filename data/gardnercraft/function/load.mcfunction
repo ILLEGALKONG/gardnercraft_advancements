@@ -22,6 +22,7 @@ scoreboard objectives add gc_tw_pick_cherry minecraft.picked_up:minecraft.cherry
 scoreboard objectives add gc_tw_pick_pale minecraft.picked_up:minecraft.pale_oak_log
 scoreboard objectives add gc_tw_logs_total dummy
 scoreboard objectives add gc_tw_logs_inventory dummy
+scoreboard objectives add gc_tw_inventory_present dummy
 scoreboard objectives add gc_tw_logs_unique dummy
 scoreboard objectives add gc_tw_wood_unique dummy
 scoreboard objectives add gc_tw_stripped_logs_unique dummy
