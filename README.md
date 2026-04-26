@@ -4,29 +4,12 @@ A custom Minecraft datapack for the Gardnercraft server, focused on long-term pr
 
 This pack is inspired by large advancement packs in scope, but the content, categories, pacing, rewards, and collectibles are designed specifically for Gardnercraft.
 
-## Current Status
-
-The pack is in active development.
-
-Currently implemented areas include:
-
-- Main Gardnercraft root tab
-- Server advancement tab
-- Collectibles tab
-- Trees and Wood tab
-- Trees and Wood reward logic
-- Command-backed tracking for large or multi-item goals
-
-The Trees and Wood section is the current reference section for the rest of the pack.
-
 ## Features
 
 - Custom advancement tabs for Gardnercraft progression
-- Quest-like chains instead of random standalone checklists
+- Quest-like chains
 - Practical rewards for selected milestones
 - Trophy-style collectible rewards
-- Hidden tracker advancements for behind-the-scenes item progress
-- Scoreboard and function-backed logic for goals vanilla advancements cannot track cleanly
 - Server-specific advancements for landmarks, playtime, custom goals, and community challenges
 
 ## Minecraft Version
@@ -114,6 +97,9 @@ Reload the datapack:
 
 ```mcfunction
 /reload
+```
+```mcfunction
+/advancement
 ```
 
 ## Contributing Ideas
