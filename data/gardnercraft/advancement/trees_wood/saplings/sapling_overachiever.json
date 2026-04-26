@@ -16,20 +16,17 @@
     },
     "title": {
       "text": "Sapling Overachiever",
-      "color": "dark_purple"
+      "color": "blue"
     },
     "description": {
-      "text": "Obtain 64 of all sapling types.",
-      "color": "dark_purple"
+      "text": "Obtain all sapling types.",
+      "color": "gray"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true,
+    "hidden": false,
     "x": 1,
     "y": 0
-  },
-  "rewards": {
-    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
   }
 }

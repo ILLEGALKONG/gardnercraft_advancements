@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/saplings/sapling_overachiever",
+  "criteria": {
+    "total_64_saplings": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_saplings"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:flowering_azalea"
+    },
+    "title": {
+      "text": "Sapling Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all sapling types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

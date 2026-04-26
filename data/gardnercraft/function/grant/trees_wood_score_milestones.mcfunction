@@ -78,7 +78,7 @@ execute if score @s gc_tw_leaves_unique matches 11.. run advancement grant @s on
 execute if score @s gc_tw_saplings_unique matches 1.. run advancement grant @s only gardnercraft:trees_wood/saplings/your_first_sapling
 execute if score @s gc_tw_saplings_unique matches 3.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_sampler
 execute if score @s gc_tw_saplings_unique matches 5.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_researcher
-execute if score @s gc_tw_saplings_unique matches 11.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_collector
+execute if score @s gc_tw_saplings_unique matches 10.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_collector
 execute if score @s gc_tw_saplings_unique matches 11.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_overachiever
 execute if score @s gc_tw_logs_total matches 16.. run advancement grant @s only gardnercraft:trees_wood/milestones/lumberjack_enthusiast
 execute if score @s gc_tw_logs_total matches 64.. run advancement grant @s only gardnercraft:trees_wood/milestones/lumberjack_job
