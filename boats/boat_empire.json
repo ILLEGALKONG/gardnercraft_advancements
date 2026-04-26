@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/boats/boat_overachiever",
+  "criteria": {
+    "total_64_boats": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_boats"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:bamboo_raft"
+    },
+    "title": {
+      "text": "Boat Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all boat types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

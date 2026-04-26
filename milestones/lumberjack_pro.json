@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/deforestation",
+  "criteria": {
+    "break_15000_logs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "break_15000_logs"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_axe"
+    },
+    "title": {
+      "text": "Lumberjack Pro",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Break 15,000 logs of any wood type.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

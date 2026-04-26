@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/hanging_signs/hanging_sign_collector",
+  "criteria": {
+    "hanging_sign_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "hanging_sign_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_hanging_sign"
+    },
+    "title": {
+      "text": "Hanging Sign Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all hanging sign types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

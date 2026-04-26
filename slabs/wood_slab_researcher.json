@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/slabs/not_to_slabby",
+  "criteria": {
+    "wood_slab_researcher": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_slab_researcher"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:mangrove_slab"
+    },
+    "title": {
+      "text": "Wood Slab Researcher",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 5 different wood slab types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

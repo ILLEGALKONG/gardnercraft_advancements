@@ -1,0 +1,50 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/boats/your_first_boat",
+    "criteria":  {
+                     "any_chest_boat":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions":  {
+                                                               "items":  [
+                                                                             {
+                                                                                 "items":  [
+                                                                                               "minecraft:oak_chest_boat",
+                                                                                               "minecraft:spruce_chest_boat",
+                                                                                               "minecraft:birch_chest_boat",
+                                                                                               "minecraft:jungle_chest_boat",
+                                                                                               "minecraft:acacia_chest_boat",
+                                                                                               "minecraft:dark_oak_chest_boat",
+                                                                                               "minecraft:mangrove_chest_boat",
+                                                                                               "minecraft:cherry_chest_boat",
+                                                                                               "minecraft:pale_oak_chest_boat",
+                                                                                               "minecraft:bamboo_chest_raft"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                           }
+                                        }
+                 },
+    "requirements":  [
+                         [
+                             "any_chest_boat"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_chest_boat"
+                             },
+                    "title":  {
+                                  "text":  "Boat with Chest",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one boat with chest type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/saplings/sapling_sampler",
+  "criteria": {
+    "sapling_researcher": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "sapling_researcher"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:mangrove_propagule"
+    },
+    "title": {
+      "text": "Sapling Researcher",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 5 different sapling types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

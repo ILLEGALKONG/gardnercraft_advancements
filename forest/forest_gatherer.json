@@ -1,0 +1,121 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/who_is_littering",
+  "criteria": {
+    "stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      }
+    },
+    "leaf_litter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:leaf_litter"
+            ]
+          }
+        ]
+      }
+    },
+    "oak_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_sapling",
+              "minecraft:spruce_sapling",
+              "minecraft:birch_sapling",
+              "minecraft:jungle_sapling",
+              "minecraft:acacia_sapling",
+              "minecraft:dark_oak_sapling",
+              "minecraft:mangrove_propagule",
+              "minecraft:cherry_sapling",
+              "minecraft:pale_oak_sapling",
+              "minecraft:azalea",
+              "minecraft:flowering_azalea"
+            ]
+          }
+        ]
+      }
+    },
+    "oak_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_leaves",
+              "minecraft:spruce_leaves",
+              "minecraft:birch_leaves",
+              "minecraft:jungle_leaves",
+              "minecraft:acacia_leaves",
+              "minecraft:dark_oak_leaves",
+              "minecraft:mangrove_leaves",
+              "minecraft:cherry_leaves",
+              "minecraft:pale_oak_leaves",
+              "minecraft:azalea_leaves",
+              "minecraft:flowering_azalea_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stick"
+    ],
+    [
+      "leaf_litter"
+    ],
+    [
+      "oak_sapling"
+    ],
+    [
+      "oak_leaves"
+    ],
+    [
+      "apple"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:apple"
+    },
+    "title": {
+      "text": "Forest Gatherer",
+      "color": "green"
+    },
+    "description": {
+      "text": "Have a sapling, leaf, leaf litter, stick, and apple in your inventory at least once.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

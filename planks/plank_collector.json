@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/planks/plank_researcher",
+  "criteria": {
+    "plank_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "plank_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_planks"
+    },
+    "title": {
+      "text": "Plank Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different plank types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

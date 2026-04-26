@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/shelves/shelf_collector",
+  "criteria": {
+    "shelf_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "shelf_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_shelf"
+    },
+    "title": {
+      "text": "Shelf Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all shelf types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

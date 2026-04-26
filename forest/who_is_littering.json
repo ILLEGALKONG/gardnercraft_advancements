@@ -1,0 +1,41 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/forest/is_this_a_branch",
+    "criteria":  {
+                     "leaf_litter":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions":  {
+                                                            "items":  [
+                                                                          {
+                                                                              "items":  [
+                                                                                            "minecraft:leaf_litter"
+                                                                                        ]
+                                                                          }
+                                                                      ]
+                                                        }
+                                     }
+                 },
+    "requirements":  [
+                         [
+                             "leaf_litter"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:leaf_litter"
+                             },
+                    "title":  {
+                                  "text":  "Who is littering?",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain leaf litter.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  1,
+                    "y":  0
+                }
+}

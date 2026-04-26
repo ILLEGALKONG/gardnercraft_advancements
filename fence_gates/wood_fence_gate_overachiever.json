@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/fence_gates/wood_fence_gate_collector",
+  "criteria": {
+    "wood_fence_gate_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_fence_gate_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_fence_gate"
+    },
+    "title": {
+      "text": "Wood Fence Gate Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all wood fence gate types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

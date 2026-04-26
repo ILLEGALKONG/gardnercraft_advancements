@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/slabs/your_first_wood_slab",
+  "criteria": {
+    "not_to_slabby": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "not_to_slabby"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_slab"
+    },
+    "title": {
+      "text": "Not to Slabby",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different wood slab types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

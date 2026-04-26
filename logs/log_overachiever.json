@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/logs/log_collector",
+  "criteria": {
+    "log_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "log_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_log"
+    },
+    "title": {
+      "text": "Log Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all log types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/buttons/wood_button_collector",
+  "criteria": {
+    "wood_button_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_button_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_button"
+    },
+    "title": {
+      "text": "Wood Button Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all wood button types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

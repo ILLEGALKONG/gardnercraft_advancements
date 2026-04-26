@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/saplings/sapling_collector",
+  "criteria": {
+    "sapling_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "sapling_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:flowering_azalea"
+    },
+    "title": {
+      "text": "Sapling Overachiever",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain all sapling types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  },
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  }
+}

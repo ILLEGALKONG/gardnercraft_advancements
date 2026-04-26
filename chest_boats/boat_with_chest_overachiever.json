@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/chest_boats/boat_with_chest_collector",
+  "criteria": {
+    "boat_with_chest_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "boat_with_chest_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_chest_boat"
+    },
+    "title": {
+      "text": "Boat with Chest Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all boat with chest types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

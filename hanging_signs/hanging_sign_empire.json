@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/hanging_signs/hanging_sign_overachiever",
+  "criteria": {
+    "total_64_hanging_signs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_hanging_signs"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:crimson_hanging_sign"
+    },
+    "title": {
+      "text": "Hanging Sign Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all hanging sign types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

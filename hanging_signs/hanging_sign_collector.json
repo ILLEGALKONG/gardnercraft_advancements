@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/hanging_signs/hanging_sign_researcher",
+  "criteria": {
+    "hanging_sign_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "hanging_sign_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_hanging_sign"
+    },
+    "title": {
+      "text": "Hanging Sign Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different hanging sign types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

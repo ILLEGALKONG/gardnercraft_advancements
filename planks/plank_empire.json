@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/planks/plank_overachiever",
+  "criteria": {
+    "total_64_planks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_planks"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:crimson_planks"
+    },
+    "title": {
+      "text": "Plank Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all plank types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

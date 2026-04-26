@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/boats/boat_collector",
+  "criteria": {
+    "boat_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "boat_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_boat"
+    },
+    "title": {
+      "text": "Boat Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all boat types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

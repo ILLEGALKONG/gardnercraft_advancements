@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/lumberjack_god",
+  "criteria": {
+    "break_100000_logs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "break_100000_logs"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_axe"
+    },
+    "title": {
+      "text": "The Lumberjack",
+      "color": "red"
+    },
+    "description": {
+      "text": "Break 100,000 logs of any wood type.",
+      "color": "red"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

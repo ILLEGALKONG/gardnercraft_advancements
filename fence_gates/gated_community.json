@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/fence_gates/your_first_wood_fence_gate",
+  "criteria": {
+    "gated_community": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "gated_community"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_fence_gate"
+    },
+    "title": {
+      "text": "Gated Community",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different wood fence gate types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

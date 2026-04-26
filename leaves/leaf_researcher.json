@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/leaves/leafy",
+  "criteria": {
+    "leaf_researcher": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "leaf_researcher"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:mangrove_leaves"
+    },
+    "title": {
+      "text": "Leaf Researcher",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 5 different leaf types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

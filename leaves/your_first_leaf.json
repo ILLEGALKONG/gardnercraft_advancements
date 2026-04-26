@@ -1,0 +1,51 @@
+{
+  "parent": "gardnercraft:trees_wood/shelves/your_first_shelf",
+  "criteria": {
+    "any_leaf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_leaves",
+              "minecraft:spruce_leaves",
+              "minecraft:birch_leaves",
+              "minecraft:jungle_leaves",
+              "minecraft:acacia_leaves",
+              "minecraft:dark_oak_leaves",
+              "minecraft:mangrove_leaves",
+              "minecraft:cherry_leaves",
+              "minecraft:pale_oak_leaves",
+              "minecraft:azalea_leaves",
+              "minecraft:flowering_azalea_leaves"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "any_leaf"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_leaves"
+    },
+    "title": {
+      "text": "Leaves",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain one leaf of any leaf type.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 0,
+    "y": 1
+  }
+}

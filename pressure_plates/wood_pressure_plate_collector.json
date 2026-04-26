@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/pressure_plates/wood_pressure_plate_researcher",
+  "criteria": {
+    "wood_pressure_plate_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_pressure_plate_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_pressure_plate"
+    },
+    "title": {
+      "text": "Wood Pressure Plate Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different wood pressure plate types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

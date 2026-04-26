@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/chest_boats/boat_with_chest_overachiever",
+  "criteria": {
+    "total_64_chest_boats": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_chest_boats"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:bamboo_chest_raft"
+    },
+    "title": {
+      "text": "Boat with Chest Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all boat with chest types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

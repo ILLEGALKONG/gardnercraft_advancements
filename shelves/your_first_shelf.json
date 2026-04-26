@@ -1,0 +1,52 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/chest_boats/your_first_boat_with_chest",
+    "criteria":  {
+                     "any_shelf":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions":  {
+                                                          "items":  [
+                                                                        {
+                                                                            "items":  [
+                                                                                          "minecraft:oak_shelf",
+                                                                                          "minecraft:spruce_shelf",
+                                                                                          "minecraft:birch_shelf",
+                                                                                          "minecraft:jungle_shelf",
+                                                                                          "minecraft:acacia_shelf",
+                                                                                          "minecraft:dark_oak_shelf",
+                                                                                          "minecraft:mangrove_shelf",
+                                                                                          "minecraft:cherry_shelf",
+                                                                                          "minecraft:pale_oak_shelf",
+                                                                                          "minecraft:bamboo_shelf",
+                                                                                          "minecraft:crimson_shelf",
+                                                                                          "minecraft:warped_shelf"
+                                                                                      ]
+                                                                        }
+                                                                    ]
+                                                      }
+                                   }
+                 },
+    "requirements":  [
+                         [
+                             "any_shelf"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_shelf"
+                             },
+                    "title":  {
+                                  "text":  "Shelf",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one shelf type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

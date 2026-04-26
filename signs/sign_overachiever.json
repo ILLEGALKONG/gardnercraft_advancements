@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/signs/sign_collector",
+  "criteria": {
+    "sign_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "sign_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_sign"
+    },
+    "title": {
+      "text": "Sign Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all sign types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

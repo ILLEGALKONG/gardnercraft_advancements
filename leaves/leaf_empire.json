@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/leaves/leaf_overachiever",
+  "criteria": {
+    "total_64_leaves": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_leaves"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:flowering_azalea_leaves"
+    },
+    "title": {
+      "text": "Leaf Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all leaf types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

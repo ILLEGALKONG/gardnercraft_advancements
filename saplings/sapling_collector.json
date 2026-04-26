@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/saplings/sapling_researcher",
+  "criteria": {
+    "sapling_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "sapling_collector"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_sapling"
+    },
+    "title": {
+      "text": "Sapling Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all sapling types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  },
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  }
+}

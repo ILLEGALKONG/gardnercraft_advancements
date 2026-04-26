@@ -1,0 +1,32 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/milestones/lumberjack_enthusiast",
+    "criteria":  {
+                     "break_64_logs":  {
+                                           "trigger":  "minecraft:impossible"
+                                       }
+                 },
+    "requirements":  [
+                         [
+                             "break_64_logs"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:stone_axe"
+                             },
+                    "title":  {
+                                  "text":  "Lumberjack Job",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Break 64 logs of any wood type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  1,
+                    "y":  0
+                }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/shelves/shelf_researcher",
+  "criteria": {
+    "shelf_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "shelf_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_shelf"
+    },
+    "title": {
+      "text": "Shelf Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different shelf types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

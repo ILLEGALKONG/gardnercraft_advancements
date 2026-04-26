@@ -1,0 +1,52 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/pressure_plates/your_first_wood_pressure_plate",
+    "criteria":  {
+                     "any_button":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions":  {
+                                                           "items":  [
+                                                                         {
+                                                                             "items":  [
+                                                                                           "minecraft:oak_button",
+                                                                                           "minecraft:spruce_button",
+                                                                                           "minecraft:birch_button",
+                                                                                           "minecraft:jungle_button",
+                                                                                           "minecraft:acacia_button",
+                                                                                           "minecraft:dark_oak_button",
+                                                                                           "minecraft:mangrove_button",
+                                                                                           "minecraft:cherry_button",
+                                                                                           "minecraft:pale_oak_button",
+                                                                                           "minecraft:bamboo_button",
+                                                                                           "minecraft:crimson_button",
+                                                                                           "minecraft:warped_button"
+                                                                                       ]
+                                                                         }
+                                                                     ]
+                                                       }
+                                    }
+                 },
+    "requirements":  [
+                         [
+                             "any_button"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_button"
+                             },
+                    "title":  {
+                                  "text":  "Wood Button",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one wood button type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

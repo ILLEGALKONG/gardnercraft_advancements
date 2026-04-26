@@ -1,0 +1,41 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/saplings/your_first_sapling",
+    "criteria":  {
+                     "stick":  {
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions":  {
+                                                      "items":  [
+                                                                    {
+                                                                        "items":  [
+                                                                                      "minecraft:stick"
+                                                                                  ]
+                                                                    }
+                                                                ]
+                                                  }
+                               }
+                 },
+    "requirements":  [
+                         [
+                             "stick"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:stick"
+                             },
+                    "title":  {
+                                  "text":  "Is This a Branch?",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain a stick.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

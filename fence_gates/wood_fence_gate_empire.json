@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/fence_gates/wood_fence_gate_overachiever",
+  "criteria": {
+    "total_64_fence_gates": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_fence_gates"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:crimson_fence_gate"
+    },
+    "title": {
+      "text": "Wood Fence Gate Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all wood fence gate types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

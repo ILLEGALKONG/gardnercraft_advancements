@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/hanging_signs/your_first_hanging_sign",
+  "criteria": {
+    "hanging_directions": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "hanging_directions"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_hanging_sign"
+    },
+    "title": {
+      "text": "Hanging Directions?",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different hanging sign types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

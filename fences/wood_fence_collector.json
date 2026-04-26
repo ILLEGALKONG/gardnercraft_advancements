@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/fences/wood_fence_researcher",
+  "criteria": {
+    "wood_fence_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_fence_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_fence"
+    },
+    "title": {
+      "text": "Wood Fence Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different wood fence types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

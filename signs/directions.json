@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/signs/your_first_sign",
+  "criteria": {
+    "directions": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "directions"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_sign"
+    },
+    "title": {
+      "text": "Directions",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different sign types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

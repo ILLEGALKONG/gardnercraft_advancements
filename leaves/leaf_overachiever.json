@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/leaves/leaf_collector",
+  "criteria": {
+    "leaf_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "leaf_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_leaves"
+    },
+    "title": {
+      "text": "Leaf Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all leaf types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/fences/your_first_wood_fence",
+  "criteria": {
+    "fencing": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "fencing"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_fence"
+    },
+    "title": {
+      "text": "Fencing",
+      "color": "green"
+    },
+    "description": {
+      "text": "Obtain 3 different wood fence types.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

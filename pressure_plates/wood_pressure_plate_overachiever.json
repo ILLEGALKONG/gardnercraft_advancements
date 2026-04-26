@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/pressure_plates/wood_pressure_plate_collector",
+  "criteria": {
+    "wood_pressure_plate_overachiever": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wood_pressure_plate_overachiever"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_pressure_plate"
+    },
+    "title": {
+      "text": "Wood Pressure Plate Overachiever",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain all wood pressure plate types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

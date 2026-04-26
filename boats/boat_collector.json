@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/boats/boat_researcher",
+  "criteria": {
+    "boat_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "boat_collector"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_boat"
+    },
+    "title": {
+      "text": "Boat Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different boat types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

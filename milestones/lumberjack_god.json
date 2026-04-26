@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/lumberjack_pro",
+  "criteria": {
+    "break_50000_logs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "break_50000_logs"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/lumberjack_god"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_axe"
+    },
+    "title": {
+      "text": "Lumberjack God",
+      "color": "red"
+    },
+    "description": {
+      "text": "Break 50,000 logs of any wood type.",
+      "color": "red"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

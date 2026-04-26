@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/slabs/wood_slab_overachiever",
+  "criteria": {
+    "total_64_slabs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "total_64_slabs"
+    ]
+  ],
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/overachiever_supply_cache"
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:crimson_slab"
+    },
+    "title": {
+      "text": "Wood Slab Empire",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain 64 of all wood slab types.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

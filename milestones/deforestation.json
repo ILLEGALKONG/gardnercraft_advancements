@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/lumberjack_job",
+  "criteria": {
+    "break_1000_logs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "break_1000_logs"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_axe"
+    },
+    "title": {
+      "text": "Deforestation",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Break 1,000 logs of any wood type.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

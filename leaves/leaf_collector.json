@@ -1,0 +1,35 @@
+{
+  "parent": "gardnercraft:trees_wood/leaves/leaf_researcher",
+  "criteria": {
+    "leaf_collector": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "leaf_collector"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_leaves"
+    },
+    "title": {
+      "text": "Leaf Collector",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Obtain 10 different leaf types.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  },
+  "rewards": {
+    "function": "gardnercraft:grant/trees_wood/collector_supply_cache"
+  }
+}
