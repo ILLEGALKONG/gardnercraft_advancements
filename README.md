@@ -41,7 +41,7 @@ Some advancements are also location-based, meaning they can only be obtained by 
 
 - 📊 [Minecraft Statistics WebUI by aggthelegoman](https://github.com/aggthelegoman/minecraft_stats_webui)
 
-- 🧩 Mod Page *(Coming Soon)*  
+- 🧩 [Gardnercraft Mod](https://github.com/ILLEGALKONG/gardnercraft_mod) 
 - 📦 Modrinth Link *(Coming Soon)*  
 - 🔥 CurseForge Link *(Coming Soon)*  
 
