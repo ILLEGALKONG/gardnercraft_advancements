@@ -1,0 +1,42 @@
+{
+  "parent": "gardnercraft:server/landmarks/visit_gardner_town",
+  "criteria": {
+    "visit_gardner_city": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": 306, "max": 475 },
+                  "y": { "min": 224, "max": 320 },
+                  "z": { "min": -685, "max": -472 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["visit_gardner_city"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/visit_place"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:lodestone"
+    },
+    "title": "A city... on a floating island?",
+    "description": "Visit Gardner City.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

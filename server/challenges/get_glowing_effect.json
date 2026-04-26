@@ -1,0 +1,30 @@
+{
+  "parent": "gardnercraft:server/root",
+  "criteria": {
+    "get_glowing_effect": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:glowing": {}
+        }
+      }
+    }
+  },
+  "requirements": [["get_glowing_effect"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/get_glowing_effect"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:beacon"
+    },
+    "title": "Throughout Heaven and Earth, I alone am the honored one",
+    "description": "Obtain the glowing effect.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  }
+}

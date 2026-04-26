@@ -1,0 +1,47 @@
+{
+  "parent": "gardnercraft:server/playtime/two_hundred_fifty_hours",
+  "criteria": {
+    "playtime_500_hour": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "stats": [
+                  {
+                    "type": "minecraft:custom",
+                    "stat": "minecraft:play_time",
+                    "value": {
+                      "min": 36000000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["playtime_500_hour"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/playtime_500_hours"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": "You have to be afking... right?",
+    "description": "Spend at least 500 hours on the server.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "gardnercraft:server/root",
+  "criteria": {
+    "get_bedrock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bedrock",
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_bedrock"]],
+  "display": {
+    "icon": {
+      "id": "minecraft:bedrock"
+    },
+    "title": "MOM, Phineas and Ferb are giving bedrock to players!",
+    "description": "Get bedrock.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  }
+}

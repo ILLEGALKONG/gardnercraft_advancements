@@ -1,0 +1,30 @@
+{
+  "parent": "gardnercraft:server/root",
+  "criteria": {
+    "get_stack_cooked_salmon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cooked_salmon",
+            "count": {
+              "min": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_stack_cooked_salmon"]],
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_salmon"
+    },
+    "title": "Cheater?!?",
+    "description": "Get a stack of cooked salmon.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

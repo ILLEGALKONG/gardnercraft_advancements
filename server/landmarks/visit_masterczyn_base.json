@@ -1,0 +1,47 @@
+{
+  "parent": "gardnercraft:server/landmarks/visit_andrew_town",
+  "criteria": {
+    "visit_masterczyn_base": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": -433, "max": -50 },
+                  "y": { "min": 47, "max": 161 },
+                  "z": { "min": -4823, "max": -4538 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["visit_masterczyn_base"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/visit_place"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "MasterCzyn"
+        }
+      }
+    },
+    "title": "That eye... it's familiar",
+    "description": "Visit MasterCzyn Base.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

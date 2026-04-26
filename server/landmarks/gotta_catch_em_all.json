@@ -1,0 +1,128 @@
+{
+  "parent": "gardnercraft:server/landmarks/visit_atrain2812_base",
+  "criteria": {
+    "gardner_town": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": 82, "max": 397 },
+                  "y": { "min": 50, "max": 142 },
+                  "z": { "min": -382, "max": -206 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "gardner_city": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": 306, "max": 475 },
+                  "y": { "min": 224, "max": 320 },
+                  "z": { "min": -685, "max": -472 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "andrew_town": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": 31, "max": 305 },
+                  "y": { "min": 38, "max": 125 },
+                  "z": { "min": 687, "max": 956 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "masterczyn_base": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": -433, "max": -50 },
+                  "y": { "min": 47, "max": 161 },
+                  "z": { "min": -4823, "max": -4538 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "atrain2812_base": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": -1905, "max": -1696 },
+                  "y": { "min": 210, "max": 292 },
+                  "z": { "min": -186, "max": -11 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["gardner_town"],
+    ["gardner_city"],
+    ["andrew_town"],
+    ["masterczyn_base"],
+    ["atrain2812_base"]
+  ],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/gardnercraft_trim"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "gardnercraft:gardnercraft_armor_trim_smithing_template"
+    },
+    "title": "Gotta catch em all!",
+    "description": "Visit Gardner Town, Gardner City, Andrew Town, Atrain2812 Base, and MasterCzyn Base.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

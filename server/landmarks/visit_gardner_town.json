@@ -1,0 +1,42 @@
+{
+  "parent": "gardnercraft:server/root",
+  "criteria": {
+    "visit_gardner_town": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": 82, "max": 397 },
+                  "y": { "min": 50, "max": 142 },
+                  "z": { "min": -382, "max": -206 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["visit_gardner_town"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/visit_place"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:compass"
+    },
+    "title": "A town made by kids?",
+    "description": "Visit Gardner Town.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

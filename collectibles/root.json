@@ -1,0 +1,24 @@
+{
+  "parent": "gardnercraft:root/gardnercraft",
+  "criteria": {
+    "unlock_collectibles": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "unlock_collectibles"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:item_frame"
+    },
+    "title": "Collectibles",
+    "description": "Special trophies earned through Gardnercraft completion goals.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  }
+}

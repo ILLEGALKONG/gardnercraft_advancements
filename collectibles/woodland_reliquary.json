@@ -1,0 +1,30 @@
+{
+  "parent": "gardnercraft:collectibles/root",
+  "criteria": {
+    "earned_reliquary": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "earned_reliquary"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_log"
+    },
+    "title": {
+      "text": "Woodland Reliquary",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Earn the trophy for completing the Trees and Wood section.",
+      "color": "gold"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

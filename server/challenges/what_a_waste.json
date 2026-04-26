@@ -1,0 +1,45 @@
+{
+  "parent": "gardnercraft:server/root",
+  "criteria": {
+    "eat_god_apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:enchanted_golden_apple"
+          ]
+        }
+      }
+    },
+    "drink_milk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:milk_bucket"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["eat_god_apple"],
+    ["drink_milk"]
+  ],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/what_a_waste"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_golden_apple"
+    },
+    "title": "What a waste",
+    "description": "Eat a GOD apple and drink a milk bucket.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

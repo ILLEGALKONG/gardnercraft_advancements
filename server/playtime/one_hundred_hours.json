@@ -1,0 +1,47 @@
+{
+  "parent": "gardnercraft:server/playtime/fifty_hours",
+  "criteria": {
+    "playtime_100_hour": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "stats": [
+                  {
+                    "type": "minecraft:custom",
+                    "stat": "minecraft:play_time",
+                    "value": {
+                      "min": 7200000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["playtime_100_hour"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/playtime_100_hours"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": "Playtime Podium here I come!",
+    "description": "Spend at least 100 hours on the server.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

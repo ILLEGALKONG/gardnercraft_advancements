@@ -1,0 +1,24 @@
+{
+  "parent": "gardnercraft:root/gardnercraft",
+  "criteria": {
+    "unlock_server_branch": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "unlock_server_branch"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:compass"
+    },
+    "title": "Server Stories",
+    "description": "Gardnercraft-only adventures, landmarks, and community challenges.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  }
+}

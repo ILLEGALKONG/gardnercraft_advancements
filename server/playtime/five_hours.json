@@ -1,0 +1,42 @@
+{
+  "parent": "gardnercraft:server/playtime/one_hour",
+  "criteria": {
+    "playtime_5_hour": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "stats": [
+                  {
+                    "type": "minecraft:custom",
+                    "stat": "minecraft:play_time",
+                    "value": {
+                      "min": 360000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["playtime_5_hour"]],
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": "I have been here before...",
+    "description": "Spend at least 5 hours on the server.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

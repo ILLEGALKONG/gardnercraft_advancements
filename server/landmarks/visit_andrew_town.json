@@ -1,0 +1,42 @@
+{
+  "parent": "gardnercraft:server/landmarks/visit_gardner_city",
+  "criteria": {
+    "visit_andrew_town": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": 31, "max": 305 },
+                  "y": { "min": 38, "max": 125 },
+                  "z": { "min": 687, "max": 956 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["visit_andrew_town"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/visit_place"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:map"
+    },
+    "title": "Not a lot of residents for a town",
+    "description": "Visit Andrew Town.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

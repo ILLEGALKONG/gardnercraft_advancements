@@ -1,0 +1,47 @@
+{
+  "parent": "gardnercraft:server/landmarks/visit_masterczyn_base",
+  "criteria": {
+    "visit_atrain2812_base": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": { "min": -1905, "max": -1696 },
+                  "y": { "min": 210, "max": 292 },
+                  "z": { "min": -186, "max": -11 }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["visit_atrain2812_base"]],
+  "rewards": {
+    "loot": [
+      "gardnercraft:reward/server/visit_place"
+    ]
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "Atrain2812"
+        }
+      }
+    },
+    "title": "Why is a train living on a sky island?",
+    "description": "Visit Atrain2812 Base.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}
