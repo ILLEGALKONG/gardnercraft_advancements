@@ -1,0 +1,52 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/trapdoors/your_first_wood_trapdoor",
+    "criteria":  {
+                     "any_pressure_plate":  {
+                                                "trigger":  "minecraft:inventory_changed",
+                                                "conditions":  {
+                                                                   "items":  [
+                                                                                 {
+                                                                                     "items":  [
+                                                                                                   "minecraft:oak_pressure_plate",
+                                                                                                   "minecraft:spruce_pressure_plate",
+                                                                                                   "minecraft:birch_pressure_plate",
+                                                                                                   "minecraft:jungle_pressure_plate",
+                                                                                                   "minecraft:acacia_pressure_plate",
+                                                                                                   "minecraft:dark_oak_pressure_plate",
+                                                                                                   "minecraft:mangrove_pressure_plate",
+                                                                                                   "minecraft:cherry_pressure_plate",
+                                                                                                   "minecraft:pale_oak_pressure_plate",
+                                                                                                   "minecraft:bamboo_pressure_plate",
+                                                                                                   "minecraft:crimson_pressure_plate",
+                                                                                                   "minecraft:warped_pressure_plate"
+                                                                                               ]
+                                                                                 }
+                                                                             ]
+                                                               }
+                                            }
+                 },
+    "requirements":  [
+                         [
+                             "any_pressure_plate"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_pressure_plate"
+                             },
+                    "title":  {
+                                  "text":  "Wood Pressure Plate",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one wood pressure plate type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

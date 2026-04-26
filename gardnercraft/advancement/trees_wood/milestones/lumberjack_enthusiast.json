@@ -1,0 +1,32 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/forest/is_this_a_branch",
+    "criteria":  {
+                     "break_16_logs":  {
+                                           "trigger":  "minecraft:impossible"
+                                       }
+                 },
+    "requirements":  [
+                         [
+                             "break_16_logs"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:wooden_axe"
+                             },
+                    "title":  {
+                                  "text":  "Lumberjack Enthusiast",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Break 16 logs of any wood type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

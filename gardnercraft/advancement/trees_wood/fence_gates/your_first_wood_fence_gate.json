@@ -1,0 +1,52 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/fences/your_first_wood_fence",
+    "criteria":  {
+                     "any_wood_fence_gate":  {
+                                                 "trigger":  "minecraft:inventory_changed",
+                                                 "conditions":  {
+                                                                    "items":  [
+                                                                                  {
+                                                                                      "items":  [
+                                                                                                    "minecraft:oak_fence_gate",
+                                                                                                    "minecraft:spruce_fence_gate",
+                                                                                                    "minecraft:birch_fence_gate",
+                                                                                                    "minecraft:jungle_fence_gate",
+                                                                                                    "minecraft:acacia_fence_gate",
+                                                                                                    "minecraft:dark_oak_fence_gate",
+                                                                                                    "minecraft:mangrove_fence_gate",
+                                                                                                    "minecraft:cherry_fence_gate",
+                                                                                                    "minecraft:pale_oak_fence_gate",
+                                                                                                    "minecraft:bamboo_fence_gate",
+                                                                                                    "minecraft:crimson_fence_gate",
+                                                                                                    "minecraft:warped_fence_gate"
+                                                                                                ]
+                                                                                  }
+                                                                              ]
+                                                                }
+                                             }
+                 },
+    "requirements":  [
+                         [
+                             "any_wood_fence_gate"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_fence_gate"
+                             },
+                    "title":  {
+                                  "text":  "Wood Fence Gate",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one wood fence gate type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}

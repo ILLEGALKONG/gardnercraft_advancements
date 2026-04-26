@@ -1,0 +1,53 @@
+﻿{
+    "parent":  "gardnercraft:trees_wood/stairs/your_first_wood_stair",
+    "criteria":  {
+                     "any_wood_slab":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions":  {
+                                                              "items":  [
+                                                                            {
+                                                                                "items":  [
+                                                                                              "minecraft:oak_slab",
+                                                                                              "minecraft:spruce_slab",
+                                                                                              "minecraft:birch_slab",
+                                                                                              "minecraft:jungle_slab",
+                                                                                              "minecraft:acacia_slab",
+                                                                                              "minecraft:dark_oak_slab",
+                                                                                              "minecraft:mangrove_slab",
+                                                                                              "minecraft:cherry_slab",
+                                                                                              "minecraft:pale_oak_slab",
+                                                                                              "minecraft:bamboo_slab",
+                                                                                              "minecraft:bamboo_mosaic_slab",
+                                                                                              "minecraft:crimson_slab",
+                                                                                              "minecraft:warped_slab"
+                                                                                          ]
+                                                                            }
+                                                                        ]
+                                                          }
+                                       }
+                 },
+    "requirements":  [
+                         [
+                             "any_wood_slab"
+                         ]
+                     ],
+    "display":  {
+                    "icon":  {
+                                 "id":  "minecraft:oak_slab"
+                             },
+                    "title":  {
+                                  "text":  "Wood Slab",
+                                  "color":  "green"
+                              },
+                    "description":  {
+                                        "text":  "Obtain one wood slab type.",
+                                        "color":  "gray"
+                                    },
+                    "frame":  "task",
+                    "show_toast":  true,
+                    "announce_to_chat":  true,
+                    "hidden":  false,
+                    "x":  0,
+                    "y":  1
+                }
+}
