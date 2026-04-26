@@ -1,100 +1,257 @@
-# Gardnercraft Advancements
+# Gardnercraft Advancements Pack
 
-## 📖 Overview
-**Gardnercraft Advancements** is a custom datapack created for a private Minecraft server shared between me and my cousins.  
-It adds a large collection of custom advancements designed to expand progression, exploration, and overall gameplay.
+A custom Minecraft datapack for the Gardnercraft server, focused on long-term progression, quest-like advancement chains, rewards, collectibles, and server-specific challenges.
 
-Most advancements are fully vanilla-compatible, but a small number require a custom mod (link coming soon).  
-Some advancements are also location-based, meaning they can only be obtained by visiting specific coordinates tied to towns and cities on our server.
+This pack is inspired by large advancement packs in scope, but the content, categories, pacing, rewards, and collectibles are designed specifically for Gardnercraft.
 
-> ⚠️ If you're not using our server or seed, certain advancements may be unobtainable without modification.
+## Current Status
 
----
+The pack is in active development.
 
-## ✨ Features
-- ✅ Large collection of custom advancements  
-- 🌍 Exploration-based challenges tied to specific locations  
-- ⚙️ Mostly vanilla-compatible  
-- 🧩 Optional mod integration for extended functionality  
-- 📈 Designed to enhance long-term progression  
+Currently implemented areas include:
 
----
+- Main Gardnercraft root tab
+- Server advancement tab
+- Collectibles tab
+- Trees and Wood tab
+- Trees and Wood reward logic
+- Command-backed tracking for large or multi-item goals
 
-## ⚠️ Known Issues
-- Leaves and saplings do not currently register properly  
-  - Likely caused by an outdated tracker system  
-  - Planned fix in a future update  
+The Trees and Wood section is the current reference section for the rest of the pack.
 
----
+## Features
 
-## 🛠️ Installation
-1. Download the datapack
-2. Place it into your world's `datapacks` folder: .minecraft/saves/<your_world>/datapacks/
-3. Run `/reload` in-game or restart your world
-4. Verify installation with: `/datapack list`
+- Custom advancement tabs for Gardnercraft progression
+- Quest-like chains instead of random standalone checklists
+- Practical rewards for selected milestones
+- Trophy-style collectible rewards
+- Hidden tracker advancements for behind-the-scenes item progress
+- Scoreboard and function-backed logic for goals vanilla advancements cannot track cleanly
+- Server-specific advancements for landmarks, playtime, custom goals, and community challenges
 
----
+## Minecraft Version
 
-## 🔗 Links
-- 🌐 [Gardnercraft Website](https://wiki.gardnercraft.dedyn.io/)  
-*(Planned: Full advancement documentation and guides)*  
+Target version:
 
-- 📊 [Minecraft Statistics WebUI by aggthelegoman](https://github.com/aggthelegoman/minecraft_stats_webui)
+```text
+Minecraft Java Edition 1.21.4+
+```
 
-- 🧩 [Gardnercraft Mod](https://github.com/ILLEGALKONG/gardnercraft_mod) 
-- 📦 Modrinth Link *(Coming Soon)*  
-- 🔥 CurseForge Link *(Coming Soon)*  
+The pack is currently being tested in the `1.21.11` line.
 
----
+## Related Projects
 
-## 🐛 Issues & Feedback
-Feedback is highly appreciated!
+- [Gardnercraft Mod](https://github.com/ILLEGALKONG/gardnercraft_mod)
+- Modrinth page: Coming soon
+- CurseForge page: Coming soon
 
-If you find bugs or have suggestions:
-- Report issues
-- Suggest new advancements
-- Recommend name/description improvements
-- Help balance difficulty or progression
+## Installation
 
----
+To install the datapack manually:
 
-## 🗺️ Compatibility Notes
-- ✔️ Works in vanilla Minecraft (most features)
-- ⚠️ Some advancements require:
-- Custom mod (TBD)
-- Specific coordinates from the Gardnercraft world
+1. Download or clone this repository.
+2. Place the datapack folder into your world's `datapacks` folder.
+3. Make sure `pack.mcmeta` is directly inside the datapack folder.
+4. Run this in game:
 
----
+```mcfunction
+/reload
+```
 
-## 🚧 Roadmap
-Planned improvements:
-- Finish Trees and Wood Section
-- Add Armory and Clothes Section
-- Add Weaponry and Tools Section
-- Add Monsters and Aggresive Mobs Section
-- Add Animals and Passive Mobs Section
-- Add Villages and Villagers Section
-- Add Colors and Hues Section
-- Add Books and Enchantments Section
-- Add Cooking and Brewing Section
-- Add Mining and Ores Section
-- Add Farming and Crops Section
-- Add Fishing and Underwater Section
-- Add Redstone and Automation
-- Add Transportation and Movement
-- Add Exploration and Biomes
-- Add Treasure and Loot
-- Add Decoration and Miscellaneous
-- Add Statistics and Numbers
-- Add Illegal and Hacked Section
-- Add Chain of Wonder Section
-- Create Gardnercraft Advancements Page on the Gardnercraft Website
-- Create SQL Datatables for Regular and Custom Advancements on aggthelegoman's Minecraft Statistics Webui
+5. Confirm it loaded:
 
----
+```mcfunction
+/datapack list
+```
 
-## ❤️ About This Project
-This is a passion project built for fun, creativity, and shared experiences on our private server.  
-It will continue to grow over time with new ideas, features, and improvements.
+## Local Development Setup
 
----
+On Nate's machine, this repository is intended to live here:
+
+```text
+C:\Users\nateg\OneDrive\Desktop\Gardnercraft\Gardnercraft Advancements Pack
+```
+
+The Minecraft test world reads the datapack through a Windows junction:
+
+```text
+C:\Users\nateg\AppData\Roaming\PrismLauncher\instances\1.21.11 Minecraft\minecraft\saves\Texture Pack Test\datapacks\gardnercraft
+```
+
+That junction points to the Desktop source folder above. This means edits made in the Desktop folder are available in Minecraft after running:
+
+```mcfunction
+/reload
+```
+
+## GitHub Workflow
+
+GitHub updates are manual on purpose, so unfinished test changes do not get pushed accidentally.
+
+Use this workflow from the repository folder:
+
+```powershell
+git status
+git add .
+git commit -m "Update advancements"
+git push
+```
+
+Repository:
+
+```text
+https://github.com/ILLEGALKONG/gardnercraft_advancements
+```
+
+## Project Structure
+
+```text
+data/
+  gardnercraft/
+    advancement/
+      collectibles/
+      root/
+      server/
+      system/
+      trees_wood/
+    function/
+      grant/
+      track/
+    loot_table/
+      reward/
+  minecraft/
+    tags/
+pack.mcmeta
+README.md
+```
+
+Important conventions:
+
+- Advancement IDs use the `gardnercraft` namespace.
+- Player-facing advancement trees are grouped by category.
+- Reward loot tables live under `data/gardnercraft/loot_table/reward/`.
+- Shared tracking logic lives under `data/gardnercraft/function/track/`.
+- Reward and milestone fulfillment lives under `data/gardnercraft/function/grant/`.
+
+## Trees and Wood
+
+Trees and Wood is the first major category being built out as the template for future sections.
+
+It currently includes rows for:
+
+- Logs
+- Wood
+- Stripped logs
+- Stripped wood
+- Planks
+- Stairs
+- Slabs
+- Fences
+- Fence gates
+- Doors
+- Trapdoors
+- Pressure plates
+- Buttons
+- Signs
+- Hanging signs
+- Boats
+- Boats with chests
+- Shelves
+- Leaves
+- Saplings
+- Forest gathering
+- Lumberjack milestones
+
+Many of these goals use hidden tracker advancements and scoreboard-backed functions so players only need to obtain each item once for collection progress. Large milestone goals, such as 64-of-each or lumberjack totals, use command-backed tracking.
+
+## Compatibility Notes
+
+Most advancements are vanilla-compatible, but some Gardnercraft-specific goals may require:
+
+- The Gardnercraft server world
+- Specific server coordinates or landmarks
+- Custom Gardnercraft content added later
+- Future companion mod or resource pack support
+
+If you use this datapack outside the Gardnercraft server, some server-specific advancements may need to be edited or removed.
+
+## Roadmap
+
+Planned future categories include:
+
+- Mining and ores
+- Farming and food
+- Adventure and exploration
+- Combat
+- Nether
+- End
+- Building
+- Armory and clothes
+- Weapons and tools
+- Animals and passive mobs
+- Monsters and hostile mobs
+- Villages and villagers
+- Colors and hues
+- Books and enchantments
+- Cooking and brewing
+- Fishing and underwater
+- Redstone and automation
+- Transportation and movement
+- Treasure and loot
+- Decoration and miscellaneous
+- Statistics and numbers
+- Illegal and hacked
+- Chain of Wonder
+- Pack-wide completion and museum-style collectible goals
+
+## Useful Commands
+
+Reload the datapack:
+
+```mcfunction
+/reload
+```
+
+Run the Trees and Wood tracker manually:
+
+```mcfunction
+/function gardnercraft:track/player_tick
+```
+
+Run score-based Trees and Wood grants manually:
+
+```mcfunction
+/function gardnercraft:grant/trees_wood_score_milestones
+```
+
+Check a tracker score:
+
+```mcfunction
+/scoreboard players get @s gc_tw_logs_unique
+```
+
+## Contributing Ideas
+
+This is a private-server passion project, so advancement ideas should fit Gardnercraft's style:
+
+- Fun to discover
+- Clear enough to understand
+- Challenging without becoming annoying
+- Rewarding for long-term play
+- Organized into readable category chains
+- Useful for both casual players and completionists
+
+Good advancement ideas should include:
+
+- Title
+- Description
+- Category
+- Trigger or goal
+- Reward idea, if any
+- Whether it should be normal, challenge, super challenge, milestone, or Gardnercraft-specific
+
+## Credits
+
+Created for the Gardnercraft Minecraft server.
+
+Built with lots of testing, a suspicious amount of wood, and the shared belief that a server is more fun when it gives players weird little quests to chase.
