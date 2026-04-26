@@ -58,12 +58,10 @@ Important conventions:
 
 Most advancements are vanilla-compatible, but some Gardnercraft-specific goals may require:
 
-- The Gardnercraft server world
-- Specific server coordinates or landmarks
-- Custom Gardnercraft content added later
-- Companion mod or resource pack support
+- Specific Coordinates
+- Gardnercraft Mod
 
-If you use this datapack outside the Gardnercraft server, some server-specific advancements may need to be edited or removed.
+If you use this datapack outside the Gardnercraft server, some server-specific advancements may not be obtainable
 
 ## Roadmap
 
