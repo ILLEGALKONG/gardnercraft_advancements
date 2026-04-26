@@ -40,6 +40,7 @@ Minecraft Java Edition 1.21.11
 ## Related Projects
 
 - [Gardnercraft Mod](https://github.com/ILLEGALKONG/gardnercraft_mod)
+- [aggthelegoman's Minecraft Statistics Webui](https://github.com/aggthelegoman/minecraft_stats_webui)
 - Modrinth page: Coming soon
 - CurseForge page: Coming soon
 
@@ -105,9 +106,29 @@ If you use this datapack outside the Gardnercraft server, some server-specific a
 
 ## Roadmap
 
-Planned future categories include:
-
-wip
+- Trees and Wood (In Progress) <- Project is Here
+- Armory and Clothes (Planned)
+- Weaponry and Tools (Planned)
+- Monsters and Aggresive Mobs (Planned)
+- Animals and Passive Mobs (Planned)
+- Villages and Villagers (Planned)
+- Colors and Hues (Planned)
+- Books and Enchantments (Planned)
+- Cooking and Brewing (Planned)
+- Mining and Ores (Planned)
+- Farming and Crops (Planned)
+- Fishing and Underwater (Planned)
+- Redstone and Automation (Planned)
+- Transportation and Movement (Planned)
+- Exploration and Biomes (Planned)
+- Treasure and Loot (Planned)
+- Decoration and Miscellaneous (Planned)
+- Statistics and Numbers (Planned)
+- Illegal and Hacked (Planned)
+- Trophies and Milestones (Planned)
+- Gardnercraft Website Dedicated Page (Planned)
+- Modrinth and Curseforge Pages (Planned)
+- More Version Compatibility (Planned)
 
 ## Useful Commands
 
