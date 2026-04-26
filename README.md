@@ -62,26 +62,6 @@ To install the datapack manually:
 /datapack list
 ```
 
-## Local Development Setup
-
-On Nate's machine, this repository is intended to live here:
-
-```text
-C:\Users\nateg\OneDrive\Desktop\Gardnercraft\Gardnercraft Advancements Pack
-```
-
-The Minecraft test world reads the datapack through a Windows junction:
-
-```text
-C:\Users\nateg\AppData\Roaming\PrismLauncher\instances\1.21.11 Minecraft\minecraft\saves\Texture Pack Test\datapacks\gardnercraft
-```
-
-That junction points to the Desktop source folder above. This means edits made in the Desktop folder are available in Minecraft after running:
-
-```mcfunction
-/reload
-```
-
 ## GitHub Workflow
 
 GitHub updates are manual on purpose, so unfinished test changes do not get pushed accidentally.
