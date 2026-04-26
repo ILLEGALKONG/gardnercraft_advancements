@@ -121,4 +121,8 @@ Good advancement ideas should include:
 
 ## Credits
 
-Created for the Gardnercraft Minecraft server. All Rights Reserved
+Created for the Gardnercraft Minecraft server.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
