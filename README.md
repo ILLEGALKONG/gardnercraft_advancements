@@ -9,6 +9,11 @@ This is a passion project for me and my cousins private minecraft server "Gardne
 I would love any help with reporting issues and also helping fix any errors. Also suggestions in general for name or description changes or level changes are always appreciated.
 <br>
 <br>
+**Current Issues**
+<br>
+Leaves and Saplings don't register properly. Need to update the tracker most likely
+<br>
+<br>
 **Links**
 <br>
 <a href="https://wiki.gardnercraft.dedyn.io/" target="_blank">Gardnercraft Website</a> Eventually I will make a page with all the information on all the advancements here
