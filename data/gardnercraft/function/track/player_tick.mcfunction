@@ -4,4 +4,5 @@ function gardnercraft:track/ensure_trees_wood_scoreboards
 function gardnercraft:track/init_trees_wood_scores
 function gardnercraft:grant/trees_wood_score_milestones
 function gardnercraft:track/trees_wood_metrics
+function gardnercraft:track/leaves_saplings_metrics
 function gardnercraft:grant/trees_wood_score_milestones
