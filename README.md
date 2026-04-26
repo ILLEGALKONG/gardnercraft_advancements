@@ -68,11 +68,28 @@ If you find bugs or have suggestions:
 
 ## 🚧 Roadmap
 Planned improvements:
-- Fix block tracking (leaves/saplings)
-- Add full advancement documentation on the website
-- Release companion mod
-- Expand advancement categories
-- Improve balance and progression flow
+- Finish Trees and Wood Section
+- Add Armory and Clothes Section
+- Add Weaponry and Tools Section
+- Add Monsters and Aggresive Mobs Section
+- Add Animals and Passive Mobs Section
+- Add Villages and Villagers Section
+- Add Colors and Hues Section
+- Add Books and Enchantments Section
+- Add Cooking and Brewing Section
+- Add Mining and Ores Section
+- Add Farming and Crops Section
+- Add Fishing and Underwater Section
+- Add Redstone and Automation
+- Add Transportation and Movement
+- Add Exploration and Biomes
+- Add Treasure and Loot
+- Add Decoration and Miscellaneous
+- Add Statistics and Numbers
+- Add Illegal and Hacked Section
+- Add Chain of Wonder Section
+- Create Gardnercraft Advancements Page on the Gardnercraft Website
+- Create SQL Datatables for Regular and Custom Advancements on aggthelegoman's Minecraft Statistics Webui
 
 ---
 
