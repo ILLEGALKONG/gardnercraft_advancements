@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/leaves/your_first_leaf",
+  "parent": "gardnercraft:trees_wood/root",
   "criteria": {
     "any_sapling": {
       "trigger": "minecraft:inventory_changed",
