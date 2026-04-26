@@ -34,10 +34,8 @@ The Trees and Wood section is the current reference section for the rest of the 
 Target version:
 
 ```text
-Minecraft Java Edition 1.21.4+
+Minecraft Java Edition 1.21.11
 ```
-
-The pack is currently being tested in the `1.21.11` line.
 
 ## Related Projects
 
