@@ -62,25 +62,6 @@ To install the datapack manually:
 /datapack list
 ```
 
-## GitHub Workflow
-
-GitHub updates are manual on purpose, so unfinished test changes do not get pushed accidentally.
-
-Use this workflow from the repository folder:
-
-```powershell
-git status
-git add .
-git commit -m "Update advancements"
-git push
-```
-
-Repository:
-
-```text
-https://github.com/ILLEGALKONG/gardnercraft_advancements
-```
-
 ## Project Structure
 
 ```text
@@ -111,37 +92,6 @@ Important conventions:
 - Shared tracking logic lives under `data/gardnercraft/function/track/`.
 - Reward and milestone fulfillment lives under `data/gardnercraft/function/grant/`.
 
-## Trees and Wood
-
-Trees and Wood is the first major category being built out as the template for future sections.
-
-It currently includes rows for:
-
-- Logs
-- Wood
-- Stripped logs
-- Stripped wood
-- Planks
-- Stairs
-- Slabs
-- Fences
-- Fence gates
-- Doors
-- Trapdoors
-- Pressure plates
-- Buttons
-- Signs
-- Hanging signs
-- Boats
-- Boats with chests
-- Shelves
-- Leaves
-- Saplings
-- Forest gathering
-- Lumberjack milestones
-
-Many of these goals use hidden tracker advancements and scoreboard-backed functions so players only need to obtain each item once for collection progress. Large milestone goals, such as 64-of-each or lumberjack totals, use command-backed tracking.
-
 ## Compatibility Notes
 
 Most advancements are vanilla-compatible, but some Gardnercraft-specific goals may require:
@@ -165,24 +115,6 @@ Reload the datapack:
 
 ```mcfunction
 /reload
-```
-
-Run the Trees and Wood tracker manually:
-
-```mcfunction
-/function gardnercraft:track/player_tick
-```
-
-Run score-based Trees and Wood grants manually:
-
-```mcfunction
-/function gardnercraft:grant/trees_wood_score_milestones
-```
-
-Check a tracker score:
-
-```mcfunction
-/scoreboard players get @s gc_tw_logs_unique
 ```
 
 ## Contributing Ideas
