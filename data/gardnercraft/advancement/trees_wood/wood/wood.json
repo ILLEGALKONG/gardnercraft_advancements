@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/logs/your_first_log",
+{
+    "parent":  "gardnercraft:trees_wood/logs/log",
     "criteria":  {
                      "any_wood":  {
                                       "trigger":  "minecraft:inventory_changed",

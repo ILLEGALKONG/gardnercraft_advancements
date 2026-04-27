@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/boats/your_first_boat",
+  "parent": "gardnercraft:trees_wood/boats/boat",
   "criteria": {
     "b_o_a_t": {
       "trigger": "minecraft:impossible"

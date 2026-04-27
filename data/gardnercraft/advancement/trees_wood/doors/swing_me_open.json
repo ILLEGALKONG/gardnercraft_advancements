@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/doors/your_first_wood_door",
+  "parent": "gardnercraft:trees_wood/doors/wood_door",
   "criteria": {
     "swing_me_open": {
       "trigger": "minecraft:impossible"

@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/planks/your_first_plank",
+{
+    "parent":  "gardnercraft:trees_wood/planks/plank",
     "criteria":  {
                      "any_wood_stair":  {
                                             "trigger":  "minecraft:inventory_changed",

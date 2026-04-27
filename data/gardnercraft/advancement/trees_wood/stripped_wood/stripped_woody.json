@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/stripped_wood/your_first_stripped_wood",
+  "parent": "gardnercraft:trees_wood/stripped_wood/stripped_wood",
   "criteria": {
     "stripped_woody": {
       "trigger": "minecraft:impossible"

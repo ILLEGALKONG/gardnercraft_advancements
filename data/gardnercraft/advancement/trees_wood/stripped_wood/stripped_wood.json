@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/stripped_logs/your_first_stripped_log",
+{
+    "parent":  "gardnercraft:trees_wood/stripped_logs/stripped_log",
     "criteria":  {
                      "any_stripped_wood":  {
                                                "trigger":  "minecraft:inventory_changed",

@@ -1,25 +1,25 @@
 {
-  "parent": "gardnercraft:trees_wood/stripped_logs/stripped_log",
+  "parent": "gardnercraft:trees_wood/forest/is_this_a_branch",
   "criteria": {
-    "stripped_loggy": {
+    "stick_season": {
       "trigger": "minecraft:impossible"
     }
   },
   "requirements": [
     [
-      "stripped_loggy"
+      "stick_season"
     ]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:stripped_spruce_log"
+      "id": "minecraft:stick"
     },
     "title": {
-      "text": "Buzz Loggy",
+      "text": "Stick Season",
       "color": "green"
     },
     "description": {
-      "text": "Obtain 3 different stripped log types.",
+      "text": "Obtain 64 sticks.",
       "color": "gray"
     },
     "frame": "task",

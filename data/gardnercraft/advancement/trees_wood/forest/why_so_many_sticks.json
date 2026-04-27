@@ -1,28 +1,28 @@
 {
-  "parent": "gardnercraft:trees_wood/stripped_logs/stripped_log",
+  "parent": "gardnercraft:trees_wood/forest/stick_season",
   "criteria": {
-    "stripped_loggy": {
+    "why_so_many_sticks": {
       "trigger": "minecraft:impossible"
     }
   },
   "requirements": [
     [
-      "stripped_loggy"
+      "why_so_many_sticks"
     ]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:stripped_spruce_log"
+      "id": "minecraft:stick"
     },
     "title": {
-      "text": "Buzz Loggy",
-      "color": "green"
+      "text": "Why So Many Sticks?",
+      "color": "blue"
     },
     "description": {
-      "text": "Obtain 3 different stripped log types.",
+      "text": "Obtain 1000 sticks.",
       "color": "gray"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false,

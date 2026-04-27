@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/fences/your_first_wood_fence",
+{
+    "parent":  "gardnercraft:trees_wood/fences/wood_fence",
     "criteria":  {
                      "any_wood_fence_gate":  {
                                                  "trigger":  "minecraft:inventory_changed",

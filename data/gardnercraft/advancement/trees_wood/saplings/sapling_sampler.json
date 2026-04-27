@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/saplings/your_first_sapling",
+  "parent": "gardnercraft:trees_wood/saplings/sapling",
   "criteria": {
     "sapling_sampler": {
       "trigger": "minecraft:impossible"

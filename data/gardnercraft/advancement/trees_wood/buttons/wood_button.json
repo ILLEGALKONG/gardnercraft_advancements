@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/pressure_plates/your_first_wood_pressure_plate",
+{
+    "parent":  "gardnercraft:trees_wood/pressure_plates/wood_pressure_plate",
     "criteria":  {
                      "any_button":  {
                                         "trigger":  "minecraft:inventory_changed",

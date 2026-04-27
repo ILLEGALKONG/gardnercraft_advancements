@@ -23,3 +23,7 @@ scoreboard players set @s gc_tw_logs_inventory 0
 scoreboard players set @s gc_tw_inventory_present 0
 scoreboard players set @s gc_tw_leaf_empire_ready 0
 scoreboard players set @s gc_tw_sapling_empire_ready 0
+scoreboard players add @s gc_tw_sticks_picked 0
+scoreboard players add @s gc_tw_sticks_crafted 0
+scoreboard players set @s gc_tw_sticks_inventory 0
+scoreboard players set @s gc_tw_sticks_total 0

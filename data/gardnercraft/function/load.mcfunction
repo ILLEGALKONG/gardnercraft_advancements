@@ -46,6 +46,10 @@ scoreboard objectives add gc_tw_leaves_unique dummy
 scoreboard objectives add gc_tw_saplings_unique dummy
 scoreboard objectives add gc_tw_leaf_empire_ready dummy
 scoreboard objectives add gc_tw_sapling_empire_ready dummy
+scoreboard objectives add gc_tw_sticks_picked minecraft.picked_up:minecraft.stick
+scoreboard objectives add gc_tw_sticks_crafted minecraft.crafted:minecraft.stick
+scoreboard objectives add gc_tw_sticks_inventory dummy
+scoreboard objectives add gc_tw_sticks_total dummy
 scoreboard objectives add gc64_1 minecraft.picked_up:minecraft.oak_boat
 scoreboard objectives add gc64_2 minecraft.crafted:minecraft.oak_boat
 scoreboard objectives add gc64_3 minecraft.picked_up:minecraft.spruce_boat

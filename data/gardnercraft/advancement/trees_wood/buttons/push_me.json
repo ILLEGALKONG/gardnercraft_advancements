@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/buttons/your_first_wood_button",
+  "parent": "gardnercraft:trees_wood/buttons/wood_button",
   "criteria": {
     "push_me": {
       "trigger": "minecraft:impossible"

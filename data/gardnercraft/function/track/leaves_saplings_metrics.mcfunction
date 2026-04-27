@@ -44,12 +44,12 @@ execute if entity @s[advancements={gardnercraft:trees_wood/tracker/azalea_seen=t
 execute unless entity @s[advancements={gardnercraft:trees_wood/tracker/azalea_seen=true}] if entity @s[nbt={Inventory:[{id:"minecraft:azalea"}]}] run scoreboard players add @s gc_tw_saplings_unique 1
 execute if entity @s[advancements={gardnercraft:trees_wood/tracker/flowering_azalea_seen=true}] run scoreboard players add @s gc_tw_saplings_unique 1
 execute unless entity @s[advancements={gardnercraft:trees_wood/tracker/flowering_azalea_seen=true}] if entity @s[nbt={Inventory:[{id:"minecraft:flowering_azalea"}]}] run scoreboard players add @s gc_tw_saplings_unique 1
-execute if score @s gc_tw_leaves_unique matches 1.. run advancement grant @s only gardnercraft:trees_wood/leaves/your_first_leaf
+execute if score @s gc_tw_leaves_unique matches 1.. run advancement grant @s only gardnercraft:trees_wood/leaves/leaves
 execute if score @s gc_tw_leaves_unique matches 3.. run advancement grant @s only gardnercraft:trees_wood/leaves/leafy
 execute if score @s gc_tw_leaves_unique matches 5.. run advancement grant @s only gardnercraft:trees_wood/leaves/leaf_researcher
 execute if score @s gc_tw_leaves_unique matches 10.. run advancement grant @s only gardnercraft:trees_wood/leaves/leaf_collector
 execute if score @s gc_tw_leaves_unique matches 11.. run advancement grant @s only gardnercraft:trees_wood/leaves/leaf_overachiever
-execute if score @s gc_tw_saplings_unique matches 1.. run advancement grant @s only gardnercraft:trees_wood/saplings/your_first_sapling
+execute if score @s gc_tw_saplings_unique matches 1.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling
 execute if score @s gc_tw_saplings_unique matches 3.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_sampler
 execute if score @s gc_tw_saplings_unique matches 5.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_researcher
 execute if score @s gc_tw_saplings_unique matches 10.. run advancement grant @s only gardnercraft:trees_wood/saplings/sapling_collector

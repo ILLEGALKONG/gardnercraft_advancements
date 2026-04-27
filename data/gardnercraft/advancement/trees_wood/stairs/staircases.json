@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/stairs/your_first_wood_stair",
+  "parent": "gardnercraft:trees_wood/stairs/wood_stair",
   "criteria": {
     "staircases": {
       "trigger": "minecraft:impossible"

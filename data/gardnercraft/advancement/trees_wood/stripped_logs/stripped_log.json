@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/wood/your_first_wood",
+{
+    "parent":  "gardnercraft:trees_wood/wood/wood",
     "criteria":  {
                      "any_stripped_log":  {
                                               "trigger":  "minecraft:inventory_changed",

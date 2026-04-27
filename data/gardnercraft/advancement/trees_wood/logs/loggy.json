@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/logs/your_first_log",
+  "parent": "gardnercraft:trees_wood/logs/log",
   "criteria": {
     "loggy": {
       "trigger": "minecraft:impossible"

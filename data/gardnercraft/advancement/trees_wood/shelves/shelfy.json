@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/shelves/your_first_shelf",
+  "parent": "gardnercraft:trees_wood/shelves/shelf",
   "criteria": {
     "shelfy": {
       "trigger": "minecraft:impossible"

@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/slabs/your_first_wood_slab",
+  "parent": "gardnercraft:trees_wood/slabs/wood_slab",
   "criteria": {
     "not_to_slabby": {
       "trigger": "minecraft:impossible"

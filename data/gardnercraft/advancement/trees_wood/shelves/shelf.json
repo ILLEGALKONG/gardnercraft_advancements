@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/chest_boats/your_first_boat_with_chest",
+{
+    "parent":  "gardnercraft:trees_wood/chest_boats/boat_with_chest",
     "criteria":  {
                      "any_shelf":  {
                                        "trigger":  "minecraft:inventory_changed",

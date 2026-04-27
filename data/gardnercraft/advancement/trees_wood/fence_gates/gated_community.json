@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/fence_gates/your_first_wood_fence_gate",
+  "parent": "gardnercraft:trees_wood/fence_gates/wood_fence_gate",
   "criteria": {
     "gated_community": {
       "trigger": "minecraft:impossible"

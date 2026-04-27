@@ -1,5 +1,5 @@
-﻿{
-    "parent":  "gardnercraft:trees_wood/hanging_signs/your_first_hanging_sign",
+{
+    "parent":  "gardnercraft:trees_wood/hanging_signs/hanging_sign",
     "criteria":  {
                      "any_boat":  {
                                       "trigger":  "minecraft:inventory_changed",

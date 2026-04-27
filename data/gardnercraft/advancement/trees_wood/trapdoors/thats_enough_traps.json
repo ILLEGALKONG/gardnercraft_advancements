@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/trapdoors/your_first_wood_trapdoor",
+  "parent": "gardnercraft:trees_wood/trapdoors/wood_trapdoor",
   "criteria": {
     "thats_enough_traps": {
       "trigger": "minecraft:impossible"
