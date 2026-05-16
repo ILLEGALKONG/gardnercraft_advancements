@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/god_axe",
+  "criteria": {
+    "speedrunner_lumberjack": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "speedrunner_lumberjack"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_axe"
+    },
+    "title": {
+      "text": "Speedrunner Lumberjack",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Break 64 logs in under 2 minutes.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

@@ -1,0 +1,420 @@
+function gardnercraft:track/ensure_trees_wood_forest_scoreboards
+scoreboard players add @s gc_fc_tmp 0
+scoreboard players add @s gc_fc_tmp2 0
+scoreboard players add @s gc_fc_near_tree 0
+scoreboard players add @s gc_fc_on_tree 0
+scoreboard players add @s gc_fc_hug_timer 0
+scoreboard players add @s gc_fc_move_now 0
+scoreboard players add @s gc_fc_move_prev 0
+scoreboard players add @s gc_fc_sprint_prev 0
+scoreboard players add @s gc_fc_sprint_delta 0
+scoreboard players add @s gc_fc_fns_prev 0
+scoreboard players add @s gc_fc_log_mined_total 0
+scoreboard players add @s gc_fc_log_mined_prev 0
+scoreboard players add @s gc_fc_log_mined_delta 0
+scoreboard players add @s gc_fc_speed_timer 0
+scoreboard players add @s gc_fc_speed_count 0
+scoreboard players add @s gc_fc_top_dist 0
+scoreboard players add @s gc_fc_top_prev 0
+scoreboard players add @s gc_fc_top_delta 0
+scoreboard players add @s gc_fc_leaf_total 0
+scoreboard players add @s gc_fc_build_timer 0
+scoreboard players add @s gc_fc_build_all 0
+scoreboard players set @s gc_fc_near_tree 0
+scoreboard players set @s gc_fc_on_tree 0
+execute if block ~1 ~0 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~-1 ~0 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~0 ~0 ~1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~0 ~0 ~-1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~1 ~1 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~-1 ~1 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~0 ~1 ~1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~0 ~1 ~-1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~0 ~-1 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
+execute if block ~ ~-1 ~ #minecraft:logs run scoreboard players set @s gc_fc_on_tree 1
+execute if block ~ ~-1 ~ #minecraft:leaves run scoreboard players set @s gc_fc_on_tree 1
+execute if block ~ ~-2 ~ #minecraft:logs run scoreboard players set @s gc_fc_on_tree 1
+execute if block ~ ~-2 ~ #minecraft:leaves run scoreboard players set @s gc_fc_on_tree 1
+scoreboard players set @s gc_fc_move_now 0
+execute if score @s gc_fc_walk matches 0.. run scoreboard players operation @s gc_fc_move_now += @s gc_fc_walk
+execute if score @s gc_fc_sprint matches 0.. run scoreboard players operation @s gc_fc_move_now += @s gc_fc_sprint
+scoreboard players operation @s gc_fc_sprint_delta = @s gc_fc_sprint
+scoreboard players operation @s gc_fc_sprint_delta -= @s gc_fc_sprint_prev
+execute if score @s gc_fc_move_now = @s gc_fc_move_prev if score @s gc_fc_near_tree matches 1 run scoreboard players add @s gc_fc_hug_timer 1
+execute unless score @s gc_fc_move_now = @s gc_fc_move_prev run scoreboard players set @s gc_fc_hug_timer 0
+execute unless score @s gc_fc_near_tree matches 1 run scoreboard players set @s gc_fc_hug_timer 0
+execute if score @s gc_fc_hug_timer matches 600.. run advancement grant @s only gardnercraft:trees_wood/forest/tree_hugger
+execute if score @s gc_fc_sprint_delta matches 20.. if score @s gc_fc_near_tree matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/bonk
+scoreboard players set @s gc_fc_leaf_total 0
+execute if score @s gc_fcl_01 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_01
+execute if score @s gc_fcl_02 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_02
+execute if score @s gc_fcl_03 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_03
+execute if score @s gc_fcl_04 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_04
+execute if score @s gc_fcl_05 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_05
+execute if score @s gc_fcl_06 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_06
+execute if score @s gc_fcl_07 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_07
+execute if score @s gc_fcl_08 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_08
+execute if score @s gc_fcl_09 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_09
+execute if score @s gc_fcl_10 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_10
+execute if score @s gc_fcl_11 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_11
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:oak_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:spruce_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:birch_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:jungle_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:acacia_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:dark_oak_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:mangrove_propagule"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:cherry_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:pale_oak_sapling"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:azalea"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+execute if score @s gc_fc_leaf_total matches 1.. if entity @s[nbt={Inventory:[{id:"minecraft:flowering_azalea"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/leaf_me_alone
+scoreboard players set @s gc_fcp_01 0
+execute if score @s gc_fcu_01_01 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_01
+execute if score @s gc_fcu_01_02 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_02
+execute if score @s gc_fcu_01_03 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_03
+execute if score @s gc_fcu_01_04 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_04
+execute if score @s gc_fcu_01_05 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_05
+execute if score @s gc_fcu_01_06 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_06
+execute if score @s gc_fcu_01_07 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_07
+execute if score @s gc_fcu_01_08 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_08
+execute if score @s gc_fcu_01_09 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_09
+execute if score @s gc_fcu_01_10 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_10
+execute if score @s gc_fcu_01_11 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_11
+execute if score @s gc_fcu_01_12 matches 0.. run scoreboard players operation @s gc_fcp_01 += @s gc_fcu_01_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_01
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_01
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_01 1
+scoreboard players operation @s gc_fcpp_01 = @s gc_fcp_01
+scoreboard players set @s gc_fcp_02 0
+execute if score @s gc_fcu_02_01 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_01
+execute if score @s gc_fcu_02_02 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_02
+execute if score @s gc_fcu_02_03 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_03
+execute if score @s gc_fcu_02_04 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_04
+execute if score @s gc_fcu_02_05 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_05
+execute if score @s gc_fcu_02_06 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_06
+execute if score @s gc_fcu_02_07 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_07
+execute if score @s gc_fcu_02_08 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_08
+execute if score @s gc_fcu_02_09 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_09
+execute if score @s gc_fcu_02_10 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_10
+execute if score @s gc_fcu_02_11 matches 0.. run scoreboard players operation @s gc_fcp_02 += @s gc_fcu_02_11
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_02
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_02
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_02 1
+scoreboard players operation @s gc_fcpp_02 = @s gc_fcp_02
+scoreboard players set @s gc_fcp_03 0
+execute if score @s gc_fcu_03_01 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_01
+execute if score @s gc_fcu_03_02 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_02
+execute if score @s gc_fcu_03_03 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_03
+execute if score @s gc_fcu_03_04 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_04
+execute if score @s gc_fcu_03_05 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_05
+execute if score @s gc_fcu_03_06 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_06
+execute if score @s gc_fcu_03_07 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_07
+execute if score @s gc_fcu_03_08 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_08
+execute if score @s gc_fcu_03_09 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_09
+execute if score @s gc_fcu_03_10 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_10
+execute if score @s gc_fcu_03_11 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_11
+execute if score @s gc_fcu_03_12 matches 0.. run scoreboard players operation @s gc_fcp_03 += @s gc_fcu_03_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_03
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_03
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_03 1
+scoreboard players operation @s gc_fcpp_03 = @s gc_fcp_03
+scoreboard players set @s gc_fcp_04 0
+execute if score @s gc_fcu_04_01 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_01
+execute if score @s gc_fcu_04_02 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_02
+execute if score @s gc_fcu_04_03 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_03
+execute if score @s gc_fcu_04_04 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_04
+execute if score @s gc_fcu_04_05 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_05
+execute if score @s gc_fcu_04_06 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_06
+execute if score @s gc_fcu_04_07 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_07
+execute if score @s gc_fcu_04_08 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_08
+execute if score @s gc_fcu_04_09 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_09
+execute if score @s gc_fcu_04_10 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_10
+execute if score @s gc_fcu_04_11 matches 0.. run scoreboard players operation @s gc_fcp_04 += @s gc_fcu_04_11
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_04
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_04
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_04 1
+scoreboard players operation @s gc_fcpp_04 = @s gc_fcp_04
+scoreboard players set @s gc_fcp_05 0
+execute if score @s gc_fcu_05_01 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_01
+execute if score @s gc_fcu_05_02 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_02
+execute if score @s gc_fcu_05_03 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_03
+execute if score @s gc_fcu_05_04 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_04
+execute if score @s gc_fcu_05_05 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_05
+execute if score @s gc_fcu_05_06 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_06
+execute if score @s gc_fcu_05_07 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_07
+execute if score @s gc_fcu_05_08 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_08
+execute if score @s gc_fcu_05_09 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_09
+execute if score @s gc_fcu_05_10 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_10
+execute if score @s gc_fcu_05_11 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_11
+execute if score @s gc_fcu_05_12 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_12
+execute if score @s gc_fcu_05_13 matches 0.. run scoreboard players operation @s gc_fcp_05 += @s gc_fcu_05_13
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_05
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_05
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_05 1
+scoreboard players operation @s gc_fcpp_05 = @s gc_fcp_05
+scoreboard players set @s gc_fcp_06 0
+execute if score @s gc_fcu_06_01 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_01
+execute if score @s gc_fcu_06_02 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_02
+execute if score @s gc_fcu_06_03 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_03
+execute if score @s gc_fcu_06_04 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_04
+execute if score @s gc_fcu_06_05 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_05
+execute if score @s gc_fcu_06_06 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_06
+execute if score @s gc_fcu_06_07 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_07
+execute if score @s gc_fcu_06_08 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_08
+execute if score @s gc_fcu_06_09 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_09
+execute if score @s gc_fcu_06_10 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_10
+execute if score @s gc_fcu_06_11 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_11
+execute if score @s gc_fcu_06_12 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_12
+execute if score @s gc_fcu_06_13 matches 0.. run scoreboard players operation @s gc_fcp_06 += @s gc_fcu_06_13
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_06
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_06
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_06 1
+scoreboard players operation @s gc_fcpp_06 = @s gc_fcp_06
+scoreboard players set @s gc_fcp_07 0
+execute if score @s gc_fcu_07_01 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_01
+execute if score @s gc_fcu_07_02 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_02
+execute if score @s gc_fcu_07_03 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_03
+execute if score @s gc_fcu_07_04 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_04
+execute if score @s gc_fcu_07_05 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_05
+execute if score @s gc_fcu_07_06 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_06
+execute if score @s gc_fcu_07_07 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_07
+execute if score @s gc_fcu_07_08 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_08
+execute if score @s gc_fcu_07_09 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_09
+execute if score @s gc_fcu_07_10 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_10
+execute if score @s gc_fcu_07_11 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_11
+execute if score @s gc_fcu_07_12 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_12
+execute if score @s gc_fcu_07_13 matches 0.. run scoreboard players operation @s gc_fcp_07 += @s gc_fcu_07_13
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_07
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_07
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_07 1
+scoreboard players operation @s gc_fcpp_07 = @s gc_fcp_07
+scoreboard players set @s gc_fcp_08 0
+execute if score @s gc_fcu_08_01 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_01
+execute if score @s gc_fcu_08_02 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_02
+execute if score @s gc_fcu_08_03 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_03
+execute if score @s gc_fcu_08_04 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_04
+execute if score @s gc_fcu_08_05 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_05
+execute if score @s gc_fcu_08_06 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_06
+execute if score @s gc_fcu_08_07 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_07
+execute if score @s gc_fcu_08_08 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_08
+execute if score @s gc_fcu_08_09 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_09
+execute if score @s gc_fcu_08_10 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_10
+execute if score @s gc_fcu_08_11 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_11
+execute if score @s gc_fcu_08_12 matches 0.. run scoreboard players operation @s gc_fcp_08 += @s gc_fcu_08_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_08
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_08
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_08 1
+scoreboard players operation @s gc_fcpp_08 = @s gc_fcp_08
+scoreboard players set @s gc_fcp_09 0
+execute if score @s gc_fcu_09_01 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_01
+execute if score @s gc_fcu_09_02 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_02
+execute if score @s gc_fcu_09_03 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_03
+execute if score @s gc_fcu_09_04 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_04
+execute if score @s gc_fcu_09_05 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_05
+execute if score @s gc_fcu_09_06 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_06
+execute if score @s gc_fcu_09_07 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_07
+execute if score @s gc_fcu_09_08 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_08
+execute if score @s gc_fcu_09_09 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_09
+execute if score @s gc_fcu_09_10 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_10
+execute if score @s gc_fcu_09_11 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_11
+execute if score @s gc_fcu_09_12 matches 0.. run scoreboard players operation @s gc_fcp_09 += @s gc_fcu_09_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_09
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_09
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_09 1
+scoreboard players operation @s gc_fcpp_09 = @s gc_fcp_09
+scoreboard players set @s gc_fcp_10 0
+execute if score @s gc_fcu_10_01 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_01
+execute if score @s gc_fcu_10_02 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_02
+execute if score @s gc_fcu_10_03 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_03
+execute if score @s gc_fcu_10_04 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_04
+execute if score @s gc_fcu_10_05 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_05
+execute if score @s gc_fcu_10_06 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_06
+execute if score @s gc_fcu_10_07 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_07
+execute if score @s gc_fcu_10_08 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_08
+execute if score @s gc_fcu_10_09 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_09
+execute if score @s gc_fcu_10_10 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_10
+execute if score @s gc_fcu_10_11 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_11
+execute if score @s gc_fcu_10_12 matches 0.. run scoreboard players operation @s gc_fcp_10 += @s gc_fcu_10_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_10
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_10
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_10 1
+scoreboard players operation @s gc_fcpp_10 = @s gc_fcp_10
+scoreboard players set @s gc_fcp_11 0
+execute if score @s gc_fcu_11_01 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_01
+execute if score @s gc_fcu_11_02 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_02
+execute if score @s gc_fcu_11_03 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_03
+execute if score @s gc_fcu_11_04 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_04
+execute if score @s gc_fcu_11_05 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_05
+execute if score @s gc_fcu_11_06 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_06
+execute if score @s gc_fcu_11_07 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_07
+execute if score @s gc_fcu_11_08 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_08
+execute if score @s gc_fcu_11_09 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_09
+execute if score @s gc_fcu_11_10 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_10
+execute if score @s gc_fcu_11_11 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_11
+execute if score @s gc_fcu_11_12 matches 0.. run scoreboard players operation @s gc_fcp_11 += @s gc_fcu_11_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_11
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_11
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_11 1
+scoreboard players operation @s gc_fcpp_11 = @s gc_fcp_11
+scoreboard players set @s gc_fcp_12 0
+execute if score @s gc_fcu_12_01 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_01
+execute if score @s gc_fcu_12_02 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_02
+execute if score @s gc_fcu_12_03 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_03
+execute if score @s gc_fcu_12_04 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_04
+execute if score @s gc_fcu_12_05 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_05
+execute if score @s gc_fcu_12_06 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_06
+execute if score @s gc_fcu_12_07 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_07
+execute if score @s gc_fcu_12_08 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_08
+execute if score @s gc_fcu_12_09 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_09
+execute if score @s gc_fcu_12_10 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_10
+execute if score @s gc_fcu_12_11 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_11
+execute if score @s gc_fcu_12_12 matches 0.. run scoreboard players operation @s gc_fcp_12 += @s gc_fcu_12_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_12
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_12
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_12 1
+scoreboard players operation @s gc_fcpp_12 = @s gc_fcp_12
+scoreboard players set @s gc_fcp_13 0
+execute if score @s gc_fcu_13_01 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_01
+execute if score @s gc_fcu_13_02 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_02
+execute if score @s gc_fcu_13_03 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_03
+execute if score @s gc_fcu_13_04 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_04
+execute if score @s gc_fcu_13_05 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_05
+execute if score @s gc_fcu_13_06 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_06
+execute if score @s gc_fcu_13_07 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_07
+execute if score @s gc_fcu_13_08 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_08
+execute if score @s gc_fcu_13_09 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_09
+execute if score @s gc_fcu_13_10 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_10
+execute if score @s gc_fcu_13_11 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_11
+execute if score @s gc_fcu_13_12 matches 0.. run scoreboard players operation @s gc_fcp_13 += @s gc_fcu_13_12
+scoreboard players operation @s gc_fc_tmp = @s gc_fcp_13
+scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_13
+execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_13 1
+scoreboard players operation @s gc_fcpp_13 = @s gc_fcp_13
+execute if score @s gc_fc_build_timer matches 1.. run scoreboard players set @s gc_fc_build_timer 0
+execute if score @s gc_fc_build_timer matches 1.. run scoreboard players set @s gc_fc_build_all 0
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_01 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_02 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_03 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_04 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_05 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_06 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_07 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_08 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_09 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_10 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_11 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_12 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_13 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
+execute if score @s gc_fc_build_timer matches 1.. run scoreboard players remove @s gc_fc_build_timer 1
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_01 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_02 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_03 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_04 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_05 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_06 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_07 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_08 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_09 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_10 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_11 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_12 0
+execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_13 0
+scoreboard players set @s gc_fc_build_all 1
+execute unless score @s gc_fcpf_01 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_02 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_03 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_04 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_05 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_06 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_07 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_08 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_09 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_10 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_11 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_12 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute unless score @s gc_fcpf_13 matches 1 run scoreboard players set @s gc_fc_build_all 0
+execute if score @s gc_fc_build_all matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/professional_builder
+scoreboard players set @s gc_fc_log_mined_total 0
+execute if score @s gc_tw_oak_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_oak_log
+execute if score @s gc_tw_spruce_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_spruce_log
+execute if score @s gc_tw_birch_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_birch_log
+execute if score @s gc_tw_jungle_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_jungle_log
+execute if score @s gc_tw_acacia_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_acacia_log
+execute if score @s gc_tw_dark_oak_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_dark_oak_log
+execute if score @s gc_tw_mangrove_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_mangrove_log
+execute if score @s gc_tw_cherry_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_cherry_log
+execute if score @s gc_tw_pale_oak_log matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_pale_oak_log
+execute if score @s gc_tw_bamboo_block matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_bamboo_block
+execute if score @s gc_tw_crimson_stem matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_crimson_stem
+execute if score @s gc_tw_warped_stem matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_warped_stem
+scoreboard players operation @s gc_fc_log_mined_delta = @s gc_fc_log_mined_total
+scoreboard players operation @s gc_fc_log_mined_delta -= @s gc_fc_log_mined_prev
+execute if score @s gc_fc_log_mined_delta matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe"}}] run advancement grant @s only gardnercraft:trees_wood/forest/god_axe
+execute if score @s gc_fc_log_mined_delta matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:diamond_axe"}}] run advancement grant @s only gardnercraft:trees_wood/forest/god_axe
+execute if score @s gc_fc_speed_timer matches 1 run scoreboard players set @s gc_fc_speed_count 0
+execute if score @s gc_fc_speed_timer matches 1 run scoreboard players set @s gc_fc_speed_timer 0
+execute if score @s gc_fc_speed_timer matches 0 if score @s gc_fc_log_mined_delta matches 1.. run scoreboard players set @s gc_fc_speed_timer 2400
+execute if score @s gc_fc_speed_timer matches 1.. if score @s gc_fc_log_mined_delta matches 1.. run scoreboard players operation @s gc_fc_speed_count += @s gc_fc_log_mined_delta
+execute if score @s gc_fc_speed_timer matches 1.. run scoreboard players remove @s gc_fc_speed_timer 1
+execute if score @s gc_fc_speed_count matches 64.. run advancement grant @s only gardnercraft:trees_wood/forest/speedrunner_lumberjack
+scoreboard players operation @s gc_fc_log_mined_prev = @s gc_fc_log_mined_total
+scoreboard players operation @s gc_fc_tmp = @s gc_fc_fns
+scoreboard players operation @s gc_fc_tmp -= @s gc_fc_fns_prev
+execute if score @s gc_fc_tmp matches 1.. if score @s gc_fc_near_tree matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/forest_fire
+scoreboard players operation @s gc_fc_fns_prev = @s gc_fc_fns
+execute if entity @s[advancements={gardnercraft:trees_wood/logs/log_empire=true}] run advancement grant @s only gardnercraft:trees_wood/forest/wood_empire
+execute if biome ~ ~ ~ minecraft:forest run scoreboard players set @s gc_fcb_01 1
+execute if biome ~ ~ ~ minecraft:flower_forest run scoreboard players set @s gc_fcb_02 1
+execute if biome ~ ~ ~ minecraft:birch_forest run scoreboard players set @s gc_fcb_03 1
+execute if biome ~ ~ ~ minecraft:old_growth_birch_forest run scoreboard players set @s gc_fcb_04 1
+execute if biome ~ ~ ~ minecraft:dark_forest run scoreboard players set @s gc_fcb_05 1
+execute if biome ~ ~ ~ minecraft:pale_garden run scoreboard players set @s gc_fcb_06 1
+execute if biome ~ ~ ~ minecraft:cherry_grove run scoreboard players set @s gc_fcb_07 1
+execute if biome ~ ~ ~ minecraft:taiga run scoreboard players set @s gc_fcb_08 1
+execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run scoreboard players set @s gc_fcb_09 1
+execute if biome ~ ~ ~ minecraft:old_growth_spruce_taiga run scoreboard players set @s gc_fcb_10 1
+execute if biome ~ ~ ~ minecraft:snowy_taiga run scoreboard players set @s gc_fcb_11 1
+execute if biome ~ ~ ~ minecraft:jungle run scoreboard players set @s gc_fcb_12 1
+execute if biome ~ ~ ~ minecraft:sparse_jungle run scoreboard players set @s gc_fcb_13 1
+execute if biome ~ ~ ~ minecraft:bamboo_jungle run scoreboard players set @s gc_fcb_14 1
+scoreboard players set @s gc_fc_tmp 1
+execute unless score @s gc_fcb_01 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_02 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_03 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_04 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_05 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_06 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_07 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_08 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_09 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_10 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_11 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_12 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_13 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute unless score @s gc_fcb_14 matches 1 run scoreboard players set @s gc_fc_tmp 0
+execute if score @s gc_fc_tmp matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/nature_conqueror
+execute if score @s gc_fc_on_tree matches 1 if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"},{Slot:102b,id:"minecraft:leather_chestplate"},{Slot:101b,id:"minecraft:leather_leggings"},{Slot:100b,id:"minecraft:leather_boots"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/forest_drip
+scoreboard players operation @s gc_fc_top_delta = @s gc_fc_move_now
+scoreboard players operation @s gc_fc_top_delta -= @s gc_fc_top_prev
+scoreboard players set @s gc_fc_tmp 0
+execute if biome ~ ~ ~ minecraft:forest run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:flower_forest run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:birch_forest run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:old_growth_birch_forest run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:dark_forest run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:pale_garden run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:cherry_grove run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:taiga run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:old_growth_spruce_taiga run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:snowy_taiga run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:jungle run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:sparse_jungle run scoreboard players set @s gc_fc_tmp 1
+execute if biome ~ ~ ~ minecraft:bamboo_jungle run scoreboard players set @s gc_fc_tmp 1
+execute if score @s gc_fc_tmp matches 1 if score @s gc_fc_on_tree matches 1 if score @s gc_fc_top_delta matches 1.. run scoreboard players operation @s gc_fc_top_dist += @s gc_fc_top_delta
+execute unless score @s gc_fc_tmp matches 1 run scoreboard players set @s gc_fc_top_dist 0
+execute unless score @s gc_fc_on_tree matches 1 run scoreboard players set @s gc_fc_top_dist 0
+execute if score @s gc_fc_top_dist matches 10000.. run advancement grant @s only gardnercraft:trees_wood/forest/tree_top_hop
+scoreboard players operation @s gc_fc_top_prev = @s gc_fc_move_now
+scoreboard players operation @s gc_fc_move_prev = @s gc_fc_move_now
+scoreboard players operation @s gc_fc_sprint_prev = @s gc_fc_sprint

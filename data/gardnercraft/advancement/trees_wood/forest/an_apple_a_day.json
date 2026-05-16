@@ -1,13 +1,13 @@
 {
-  "parent": "gardnercraft:trees_wood/forest/an_apple_a_day",
+  "parent": "gardnercraft:trees_wood/root",
   "criteria": {
-    "leaf_litter": {
+    "apple": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:leaf_litter"
+              "minecraft:apple"
             ]
           }
         ]
@@ -16,26 +16,26 @@
   },
   "requirements": [
     [
-      "leaf_litter"
+      "apple"
     ]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:leaf_litter"
+      "id": "minecraft:apple"
     },
     "title": {
-      "text": "Who is littering?",
+      "text": "An Apple a Day",
       "color": "green"
     },
     "description": {
-      "text": "Obtain leaf litter.",
+      "text": "Obtain an apple.",
       "color": "gray"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false,
-    "x": 1,
-    "y": 0
+    "x": 0,
+    "y": 1
   }
 }

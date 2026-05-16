@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/leaf_me_alone",
+  "criteria": {
+    "professional_builder": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "professional_builder"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:crafting_table"
+    },
+    "title": {
+      "text": "Professional Builder",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Place every type of wood block in 60 seconds.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

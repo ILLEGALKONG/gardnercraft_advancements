@@ -1,5 +1,6 @@
 ﻿# Gardnercraft pack setup
 function gardnercraft:track/ensure_trees_wood_empire_scoreboards
+function gardnercraft:track/ensure_trees_wood_forest_scoreboards
 scoreboard objectives add gc_tw_oak_log minecraft.mined:minecraft.oak_log
 scoreboard objectives add gc_tw_spruce_log minecraft.mined:minecraft.spruce_log
 scoreboard objectives add gc_tw_birch_log minecraft.mined:minecraft.birch_log

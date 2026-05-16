@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/nature_conqueror",
+  "criteria": {
+    "forest_drip": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "forest_drip"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_chestplate"
+    },
+    "title": {
+      "text": "Forest Drip",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Wear green dyed leather helmet and tunic and regular leather pants and boots while standing on top of a tree.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

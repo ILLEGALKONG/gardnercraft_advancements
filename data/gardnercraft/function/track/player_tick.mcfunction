@@ -5,5 +5,6 @@ function gardnercraft:track/init_trees_wood_scores
 function gardnercraft:grant/trees_wood_score_milestones
 function gardnercraft:track/trees_wood_metrics
 function gardnercraft:track/trees_wood_empire_inventory
+function gardnercraft:track/trees_wood_forest_challenges
 function gardnercraft:track/leaves_saplings_metrics
 function gardnercraft:grant/trees_wood_score_milestones

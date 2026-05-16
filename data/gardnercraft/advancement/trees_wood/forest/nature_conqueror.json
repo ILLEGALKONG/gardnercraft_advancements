@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/forest_fire",
+  "criteria": {
+    "nature_conqueror": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "nature_conqueror"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:filled_map"
+    },
+    "title": {
+      "text": "Nature Conqueror",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Visit every forest biome.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

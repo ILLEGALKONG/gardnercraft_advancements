@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/bonk",
+  "criteria": {
+    "leaf_me_alone": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "leaf_me_alone"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_sapling"
+    },
+    "title": {
+      "text": "Leaf Me Alone",
+      "color": "green"
+    },
+    "description": {
+      "text": "Break leaves until you get a sapling.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

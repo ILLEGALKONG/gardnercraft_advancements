@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/professional_builder",
+  "criteria": {
+    "god_axe": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "god_axe"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_axe"
+    },
+    "title": {
+      "text": "GOD Axe",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Use a maxed axe to break logs.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}
