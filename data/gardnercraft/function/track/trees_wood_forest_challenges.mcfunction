@@ -1,50 +1,13 @@
 function gardnercraft:track/ensure_trees_wood_forest_scoreboards
 scoreboard players add @s gc_fc_tmp 0
 scoreboard players add @s gc_fc_tmp2 0
-scoreboard players add @s gc_fc_near_tree 0
-scoreboard players add @s gc_fc_on_tree 0
-scoreboard players add @s gc_fc_hug_timer 0
-scoreboard players add @s gc_fc_move_now 0
-scoreboard players add @s gc_fc_move_prev 0
-scoreboard players add @s gc_fc_sprint_prev 0
-scoreboard players add @s gc_fc_sprint_delta 0
-scoreboard players add @s gc_fc_fns_prev 0
 scoreboard players add @s gc_fc_log_mined_total 0
 scoreboard players add @s gc_fc_log_mined_prev 0
 scoreboard players add @s gc_fc_log_mined_delta 0
 scoreboard players add @s gc_fc_speed_timer 0
 scoreboard players add @s gc_fc_speed_count 0
-scoreboard players add @s gc_fc_top_dist 0
-scoreboard players add @s gc_fc_top_prev 0
-scoreboard players add @s gc_fc_top_delta 0
 scoreboard players add @s gc_fc_leaf_total 0
-scoreboard players add @s gc_fc_build_timer 0
 scoreboard players add @s gc_fc_build_all 0
-scoreboard players set @s gc_fc_near_tree 0
-scoreboard players set @s gc_fc_on_tree 0
-execute if block ~1 ~0 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~-1 ~0 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~0 ~0 ~1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~0 ~0 ~-1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~1 ~1 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~-1 ~1 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~0 ~1 ~1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~0 ~1 ~-1 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~0 ~-1 ~0 #minecraft:logs run scoreboard players set @s gc_fc_near_tree 1
-execute if block ~ ~-1 ~ #minecraft:logs run scoreboard players set @s gc_fc_on_tree 1
-execute if block ~ ~-1 ~ #minecraft:leaves run scoreboard players set @s gc_fc_on_tree 1
-execute if block ~ ~-2 ~ #minecraft:logs run scoreboard players set @s gc_fc_on_tree 1
-execute if block ~ ~-2 ~ #minecraft:leaves run scoreboard players set @s gc_fc_on_tree 1
-scoreboard players set @s gc_fc_move_now 0
-execute if score @s gc_fc_walk matches 0.. run scoreboard players operation @s gc_fc_move_now += @s gc_fc_walk
-execute if score @s gc_fc_sprint matches 0.. run scoreboard players operation @s gc_fc_move_now += @s gc_fc_sprint
-scoreboard players operation @s gc_fc_sprint_delta = @s gc_fc_sprint
-scoreboard players operation @s gc_fc_sprint_delta -= @s gc_fc_sprint_prev
-execute if score @s gc_fc_move_now = @s gc_fc_move_prev if score @s gc_fc_near_tree matches 1 run scoreboard players add @s gc_fc_hug_timer 1
-execute unless score @s gc_fc_move_now = @s gc_fc_move_prev run scoreboard players set @s gc_fc_hug_timer 0
-execute unless score @s gc_fc_near_tree matches 1 run scoreboard players set @s gc_fc_hug_timer 0
-execute if score @s gc_fc_hug_timer matches 600.. run advancement grant @s only gardnercraft:trees_wood/forest/tree_hugger
-execute if score @s gc_fc_sprint_delta matches 20.. if score @s gc_fc_near_tree matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/bonk
 scoreboard players set @s gc_fc_leaf_total 0
 execute if score @s gc_fcl_01 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_01
 execute if score @s gc_fcl_02 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_02
@@ -290,35 +253,6 @@ scoreboard players operation @s gc_fc_tmp = @s gc_fcp_13
 scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_13
 execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_13 1
 scoreboard players operation @s gc_fcpp_13 = @s gc_fcp_13
-execute if score @s gc_fc_build_timer matches 1.. run scoreboard players set @s gc_fc_build_timer 0
-execute if score @s gc_fc_build_timer matches 1.. run scoreboard players set @s gc_fc_build_all 0
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_01 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_02 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_03 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_04 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_05 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_06 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_07 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_08 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_09 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_10 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_11 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_12 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 0 if score @s gc_fcpf_13 matches 1 run scoreboard players set @s gc_fc_build_timer 1200
-execute if score @s gc_fc_build_timer matches 1.. run scoreboard players remove @s gc_fc_build_timer 1
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_01 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_02 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_03 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_04 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_05 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_06 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_07 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_08 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_09 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_10 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_11 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_12 0
-execute if score @s gc_fc_build_timer matches 0 run scoreboard players set @s gc_fcpf_13 0
 scoreboard players set @s gc_fc_build_all 1
 execute unless score @s gc_fcpf_01 matches 1 run scoreboard players set @s gc_fc_build_all 0
 execute unless score @s gc_fcpf_02 matches 1 run scoreboard players set @s gc_fc_build_all 0
@@ -349,8 +283,8 @@ execute if score @s gc_tw_crimson_stem matches 0.. run scoreboard players operat
 execute if score @s gc_tw_warped_stem matches 0.. run scoreboard players operation @s gc_fc_log_mined_total += @s gc_tw_warped_stem
 scoreboard players operation @s gc_fc_log_mined_delta = @s gc_fc_log_mined_total
 scoreboard players operation @s gc_fc_log_mined_delta -= @s gc_fc_log_mined_prev
-execute if score @s gc_fc_log_mined_delta matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe"}}] run advancement grant @s only gardnercraft:trees_wood/forest/god_axe
-execute if score @s gc_fc_log_mined_delta matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:diamond_axe"}}] run advancement grant @s only gardnercraft:trees_wood/forest/god_axe
+execute if score @s gc_fc_log_mined_delta matches 1.. if items entity @s weapon.mainhand minecraft:netherite_axe[minecraft:enchantments~[{enchantments:"minecraft:efficiency",levels:5},{enchantments:"minecraft:unbreaking",levels:3},{enchantments:"minecraft:mending",levels:1},{enchantments:"minecraft:fortune",levels:3},{enchantments:["minecraft:sharpness","minecraft:smite","minecraft:bane_of_arthropods"],levels:5}]] run advancement grant @s only gardnercraft:trees_wood/forest/god_axe
+execute if score @s gc_fc_log_mined_delta matches 1.. if items entity @s weapon.mainhand minecraft:netherite_axe[minecraft:enchantments~[{enchantments:"minecraft:efficiency",levels:5},{enchantments:"minecraft:unbreaking",levels:3},{enchantments:"minecraft:mending",levels:1},{enchantments:"minecraft:silk_touch",levels:1},{enchantments:["minecraft:sharpness","minecraft:smite","minecraft:bane_of_arthropods"],levels:5}]] run advancement grant @s only gardnercraft:trees_wood/forest/god_axe
 execute if score @s gc_fc_speed_timer matches 1 run scoreboard players set @s gc_fc_speed_count 0
 execute if score @s gc_fc_speed_timer matches 1 run scoreboard players set @s gc_fc_speed_timer 0
 execute if score @s gc_fc_speed_timer matches 0 if score @s gc_fc_log_mined_delta matches 1.. run scoreboard players set @s gc_fc_speed_timer 2400
@@ -358,10 +292,6 @@ execute if score @s gc_fc_speed_timer matches 1.. if score @s gc_fc_log_mined_de
 execute if score @s gc_fc_speed_timer matches 1.. run scoreboard players remove @s gc_fc_speed_timer 1
 execute if score @s gc_fc_speed_count matches 64.. run advancement grant @s only gardnercraft:trees_wood/forest/speedrunner_lumberjack
 scoreboard players operation @s gc_fc_log_mined_prev = @s gc_fc_log_mined_total
-scoreboard players operation @s gc_fc_tmp = @s gc_fc_fns
-scoreboard players operation @s gc_fc_tmp -= @s gc_fc_fns_prev
-execute if score @s gc_fc_tmp matches 1.. if score @s gc_fc_near_tree matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/forest_fire
-scoreboard players operation @s gc_fc_fns_prev = @s gc_fc_fns
 execute if entity @s[advancements={gardnercraft:trees_wood/logs/log_empire=true}] run advancement grant @s only gardnercraft:trees_wood/forest/wood_empire
 execute if biome ~ ~ ~ minecraft:forest run scoreboard players set @s gc_fcb_01 1
 execute if biome ~ ~ ~ minecraft:flower_forest run scoreboard players set @s gc_fcb_02 1
@@ -393,28 +323,4 @@ execute unless score @s gc_fcb_12 matches 1 run scoreboard players set @s gc_fc_
 execute unless score @s gc_fcb_13 matches 1 run scoreboard players set @s gc_fc_tmp 0
 execute unless score @s gc_fcb_14 matches 1 run scoreboard players set @s gc_fc_tmp 0
 execute if score @s gc_fc_tmp matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/nature_conqueror
-execute if score @s gc_fc_on_tree matches 1 if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"},{Slot:102b,id:"minecraft:leather_chestplate"},{Slot:101b,id:"minecraft:leather_leggings"},{Slot:100b,id:"minecraft:leather_boots"}]}] run advancement grant @s only gardnercraft:trees_wood/forest/forest_drip
-scoreboard players operation @s gc_fc_top_delta = @s gc_fc_move_now
-scoreboard players operation @s gc_fc_top_delta -= @s gc_fc_top_prev
-scoreboard players set @s gc_fc_tmp 0
-execute if biome ~ ~ ~ minecraft:forest run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:flower_forest run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:birch_forest run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:old_growth_birch_forest run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:dark_forest run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:pale_garden run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:cherry_grove run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:taiga run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:old_growth_spruce_taiga run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:snowy_taiga run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:jungle run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:sparse_jungle run scoreboard players set @s gc_fc_tmp 1
-execute if biome ~ ~ ~ minecraft:bamboo_jungle run scoreboard players set @s gc_fc_tmp 1
-execute if score @s gc_fc_tmp matches 1 if score @s gc_fc_on_tree matches 1 if score @s gc_fc_top_delta matches 1.. run scoreboard players operation @s gc_fc_top_dist += @s gc_fc_top_delta
-execute unless score @s gc_fc_tmp matches 1 run scoreboard players set @s gc_fc_top_dist 0
-execute unless score @s gc_fc_on_tree matches 1 run scoreboard players set @s gc_fc_top_dist 0
-execute if score @s gc_fc_top_dist matches 10000.. run advancement grant @s only gardnercraft:trees_wood/forest/tree_top_hop
-scoreboard players operation @s gc_fc_top_prev = @s gc_fc_move_now
-scoreboard players operation @s gc_fc_move_prev = @s gc_fc_move_now
-scoreboard players operation @s gc_fc_sprint_prev = @s gc_fc_sprint
+execute if items entity @s armor.head minecraft:leather_helmet[minecraft:dyed_color=6192150] if items entity @s armor.chest minecraft:leather_chestplate[minecraft:dyed_color=6192150] if items entity @s armor.legs minecraft:leather_leggings if items entity @s armor.feet minecraft:leather_boots run advancement grant @s only gardnercraft:trees_wood/forest/forest_drip
