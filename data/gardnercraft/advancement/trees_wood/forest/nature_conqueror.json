@@ -25,7 +25,7 @@
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false,
+    "hidden": true,
     "x": 1,
     "y": 0
   }
