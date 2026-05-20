@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/afternoon_in_the_woods",
+  "criteria": {
+    "night_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "night_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:lantern"
+    },
+    "title": {
+      "text": "Night in the Woods",
+      "color": "green"
+    },
+    "description": {
+      "text": "Spend sunset in any forest biome.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

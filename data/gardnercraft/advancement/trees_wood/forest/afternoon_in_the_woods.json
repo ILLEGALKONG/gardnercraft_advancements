@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/morning_in_the_woods",
+  "criteria": {
+    "afternoon_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "afternoon_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:sunflower"
+    },
+    "title": {
+      "text": "Afternoon in the Woods",
+      "color": "green"
+    },
+    "description": {
+      "text": "Spend 12-3pm in any forest biome.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

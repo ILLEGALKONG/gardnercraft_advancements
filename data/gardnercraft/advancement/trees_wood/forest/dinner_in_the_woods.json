@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/lunch_in_the_woods",
+  "criteria": {
+    "dinner_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "dinner_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_beef"
+    },
+    "title": {
+      "text": "Dinner in the Woods",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Eat any food in any forest biome during sunset.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

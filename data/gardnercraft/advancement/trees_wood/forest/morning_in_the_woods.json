@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/forest_drip",
+  "criteria": {
+    "morning_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "morning_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "text": "Morning in the Woods",
+      "color": "green"
+    },
+    "description": {
+      "text": "Spend sunrise in any forest biome.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

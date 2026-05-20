@@ -324,3 +324,11 @@ execute unless score @s gc_fcb_13 matches 1 run scoreboard players set @s gc_fc_
 execute unless score @s gc_fcb_14 matches 1 run scoreboard players set @s gc_fc_tmp 0
 execute if score @s gc_fc_tmp matches 1 run advancement grant @s only gardnercraft:trees_wood/forest/nature_conqueror
 execute if items entity @s armor.head minecraft:leather_helmet[minecraft:dyed_color=6192150] if items entity @s armor.chest minecraft:leather_chestplate[minecraft:dyed_color=6192150] if items entity @s armor.legs minecraft:leather_leggings if items entity @s armor.feet minecraft:leather_boots run advancement grant @s only gardnercraft:trees_wood/forest/forest_drip
+function gardnercraft:track/trees_wood_forest_time_state
+execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 23000..23999 run advancement grant @s only gardnercraft:trees_wood/forest/morning_in_the_woods
+execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 0..1000 run advancement grant @s only gardnercraft:trees_wood/forest/morning_in_the_woods
+execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 6000..9000 run advancement grant @s only gardnercraft:trees_wood/forest/afternoon_in_the_woods
+execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 12000..13000 run advancement grant @s only gardnercraft:trees_wood/forest/night_in_the_woods
+execute unless score @s gc_fc_daytime = @s gc_fc_last_daytime if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 13000..23000 run scoreboard players add @s gc_fc_lost_night_ticks 1
+scoreboard players operation @s gc_fc_last_daytime = @s gc_fc_daytime
+execute if score @s gc_fc_lost_night_ticks matches 12000.. run advancement grant @s only gardnercraft:trees_wood/forest/lost_in_the_woods

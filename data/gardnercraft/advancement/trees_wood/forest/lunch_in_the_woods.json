@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/breakfast_in_the_woods",
+  "criteria": {
+    "lunch_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "lunch_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:apple"
+    },
+    "title": {
+      "text": "Lunch in the Woods",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Eat any food in any forest biome during 12-3pm.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

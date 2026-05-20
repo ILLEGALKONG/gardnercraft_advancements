@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/dinner_in_the_woods",
+  "criteria": {
+    "lost_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "lost_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:compass"
+    },
+    "title": {
+      "text": "Lost in the Woods",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Spend 10 minutes in any forest biome during night/dark.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

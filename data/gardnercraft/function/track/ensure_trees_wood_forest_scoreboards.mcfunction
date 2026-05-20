@@ -7,6 +7,10 @@ scoreboard objectives add gc_fc_speed_timer dummy
 scoreboard objectives add gc_fc_speed_count dummy
 scoreboard objectives add gc_fc_leaf_total dummy
 scoreboard objectives add gc_fc_build_all dummy
+scoreboard objectives add gc_fc_daytime dummy
+scoreboard objectives add gc_fc_last_daytime dummy
+scoreboard objectives add gc_fc_in_forest dummy
+scoreboard objectives add gc_fc_lost_night_ticks dummy
 scoreboard objectives add gc_fcb_01 dummy
 scoreboard objectives add gc_fcb_02 dummy
 scoreboard objectives add gc_fcb_03 dummy

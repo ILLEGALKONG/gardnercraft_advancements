@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/forest/night_in_the_woods",
+  "criteria": {
+    "breakfast_in_the_woods": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "breakfast_in_the_woods"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:bread"
+    },
+    "title": {
+      "text": "Breakfast in the Woods",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Eat any food in any forest biome during sunrise.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}
