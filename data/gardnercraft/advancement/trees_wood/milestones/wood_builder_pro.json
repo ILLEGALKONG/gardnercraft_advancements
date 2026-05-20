@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/wood_builder_enthusiast",
+  "criteria": {
+    "place_5000_wood_blocks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "place_5000_wood_blocks"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:mangrove_planks"
+    },
+    "title": {
+      "text": "Wood Builder Pro",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Place 5,000 of any kind of wood blocks.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

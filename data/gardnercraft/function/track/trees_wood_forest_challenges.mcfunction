@@ -8,6 +8,9 @@ scoreboard players add @s gc_fc_speed_timer 0
 scoreboard players add @s gc_fc_speed_count 0
 scoreboard players add @s gc_fc_leaf_total 0
 scoreboard players add @s gc_fc_build_all 0
+scoreboard players add @s gc_fc_build_total 0
+scoreboard players add @s gc_fc_naked_ticks 0
+scoreboard players add @s gc_fc_totems 0
 scoreboard players set @s gc_fc_leaf_total 0
 execute if score @s gc_fcl_01 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_01
 execute if score @s gc_fcl_02 matches 0.. run scoreboard players operation @s gc_fc_leaf_total += @s gc_fcl_02
@@ -253,6 +256,68 @@ scoreboard players operation @s gc_fc_tmp = @s gc_fcp_13
 scoreboard players operation @s gc_fc_tmp -= @s gc_fcpp_13
 execute if score @s gc_fc_tmp matches 1.. run scoreboard players set @s gc_fcpf_13 1
 scoreboard players operation @s gc_fcpp_13 = @s gc_fcp_13
+scoreboard players set @s gc_fcp_14 0
+execute if score @s gc_fcu_14_01 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_01
+execute if score @s gc_fcu_14_02 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_02
+execute if score @s gc_fcu_14_03 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_03
+execute if score @s gc_fcu_14_04 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_04
+execute if score @s gc_fcu_14_05 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_05
+execute if score @s gc_fcu_14_06 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_06
+execute if score @s gc_fcu_14_07 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_07
+execute if score @s gc_fcu_14_08 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_08
+execute if score @s gc_fcu_14_09 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_09
+execute if score @s gc_fcu_14_10 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_10
+execute if score @s gc_fcu_14_11 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_11
+execute if score @s gc_fcu_14_12 matches 0.. run scoreboard players operation @s gc_fcp_14 += @s gc_fcu_14_12
+scoreboard players set @s gc_fcp_15 0
+execute if score @s gc_fcu_15_01 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_01
+execute if score @s gc_fcu_15_02 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_02
+execute if score @s gc_fcu_15_03 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_03
+execute if score @s gc_fcu_15_04 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_04
+execute if score @s gc_fcu_15_05 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_05
+execute if score @s gc_fcu_15_06 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_06
+execute if score @s gc_fcu_15_07 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_07
+execute if score @s gc_fcu_15_08 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_08
+execute if score @s gc_fcu_15_09 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_09
+execute if score @s gc_fcu_15_10 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_10
+execute if score @s gc_fcu_15_11 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_11
+execute if score @s gc_fcu_15_12 matches 0.. run scoreboard players operation @s gc_fcp_15 += @s gc_fcu_15_12
+scoreboard players set @s gc_fcp_16 0
+execute if score @s gc_fcu_16_01 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_01
+execute if score @s gc_fcu_16_02 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_02
+execute if score @s gc_fcu_16_03 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_03
+execute if score @s gc_fcu_16_04 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_04
+execute if score @s gc_fcu_16_05 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_05
+execute if score @s gc_fcu_16_06 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_06
+execute if score @s gc_fcu_16_07 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_07
+execute if score @s gc_fcu_16_08 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_08
+execute if score @s gc_fcu_16_09 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_09
+execute if score @s gc_fcu_16_10 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_10
+execute if score @s gc_fcu_16_11 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_11
+execute if score @s gc_fcu_16_12 matches 0.. run scoreboard players operation @s gc_fcp_16 += @s gc_fcu_16_12
+scoreboard players set @s gc_fc_build_total 0
+execute if score @s gc_fcp_01 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_01
+execute if score @s gc_fcp_02 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_02
+execute if score @s gc_fcp_03 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_03
+execute if score @s gc_fcp_04 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_04
+execute if score @s gc_fcp_05 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_05
+execute if score @s gc_fcp_06 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_06
+execute if score @s gc_fcp_07 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_07
+execute if score @s gc_fcp_08 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_08
+execute if score @s gc_fcp_09 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_09
+execute if score @s gc_fcp_10 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_10
+execute if score @s gc_fcp_11 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_11
+execute if score @s gc_fcp_12 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_12
+execute if score @s gc_fcp_13 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_13
+execute if score @s gc_fcp_14 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_14
+execute if score @s gc_fcp_15 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_15
+execute if score @s gc_fcp_16 matches 0.. run scoreboard players operation @s gc_fc_build_total += @s gc_fcp_16
+execute if score @s gc_fc_build_total matches 64.. run advancement grant @s only gardnercraft:trees_wood/milestones/wood_builder_rookie
+execute if score @s gc_fc_build_total matches 500.. run advancement grant @s only gardnercraft:trees_wood/milestones/wood_builder_enthusiast
+execute if score @s gc_fc_build_total matches 5000.. run advancement grant @s only gardnercraft:trees_wood/milestones/wood_builder_pro
+execute if score @s gc_fc_build_total matches 10000.. run advancement grant @s only gardnercraft:trees_wood/milestones/wooden_masterpiece
+execute if score @s gc_fc_build_total matches 25000.. run advancement grant @s only gardnercraft:trees_wood/milestones/wood_builder_god
+execute if score @s gc_fc_build_total matches 50000.. run advancement grant @s only gardnercraft:trees_wood/milestones/the_wood_builder
 scoreboard players set @s gc_fc_build_all 1
 execute unless score @s gc_fcpf_01 matches 1 run scoreboard players set @s gc_fc_build_all 0
 execute unless score @s gc_fcpf_02 matches 1 run scoreboard players set @s gc_fc_build_all 0
@@ -329,6 +394,9 @@ execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 
 execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 0..1000 run advancement grant @s only gardnercraft:trees_wood/forest/morning_in_the_woods
 execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 6000..9000 run advancement grant @s only gardnercraft:trees_wood/forest/afternoon_in_the_woods
 execute if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 12000..13000 run advancement grant @s only gardnercraft:trees_wood/forest/night_in_the_woods
-execute unless score @s gc_fc_daytime = @s gc_fc_last_daytime if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 13000..23000 run scoreboard players add @s gc_fc_lost_night_ticks 1
+execute if score @s gc_fc_new_tick matches 1 if score @s gc_fc_in_forest matches 1 if score @s gc_fc_daytime matches 13000..23000 run scoreboard players add @s gc_fc_lost_night_ticks 1
+execute store result score @s gc_fc_totems run clear @s minecraft:totem_of_undying 0
+execute if score @s gc_fc_new_tick matches 1 if score @s gc_fc_in_forest matches 1 if score @s gc_fc_totems matches 0 unless data entity @s Inventory[{Slot:100b}] unless data entity @s Inventory[{Slot:101b}] unless data entity @s Inventory[{Slot:102b}] unless data entity @s Inventory[{Slot:103b}] run scoreboard players add @s gc_fc_naked_ticks 1
 scoreboard players operation @s gc_fc_last_daytime = @s gc_fc_daytime
 execute if score @s gc_fc_lost_night_ticks matches 12000.. run advancement grant @s only gardnercraft:trees_wood/forest/lost_in_the_woods
+execute if score @s gc_fc_naked_ticks matches 240000.. run advancement grant @s only gardnercraft:trees_wood/forest/naked_and_afraid

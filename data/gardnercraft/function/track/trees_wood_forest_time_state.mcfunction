@@ -1,4 +1,6 @@
 execute store result score @s gc_fc_daytime run time query daytime
+scoreboard players set @s gc_fc_new_tick 0
+execute unless score @s gc_fc_daytime = @s gc_fc_last_daytime run scoreboard players set @s gc_fc_new_tick 1
 scoreboard players set @s gc_fc_in_forest 0
 execute if biome ~ ~ ~ minecraft:forest run scoreboard players set @s gc_fc_in_forest 1
 execute if biome ~ ~ ~ minecraft:flower_forest run scoreboard players set @s gc_fc_in_forest 1

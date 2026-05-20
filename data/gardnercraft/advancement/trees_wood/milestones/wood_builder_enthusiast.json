@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/wood_builder_rookie",
+  "criteria": {
+    "place_500_wood_blocks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "place_500_wood_blocks"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:spruce_planks"
+    },
+    "title": {
+      "text": "Wood Builder Enthusiast",
+      "color": "green"
+    },
+    "description": {
+      "text": "Place 500 of any kind of wood blocks.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

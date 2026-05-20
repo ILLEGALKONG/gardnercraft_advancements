@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/wooden_masterpiece",
+  "criteria": {
+    "place_25000_wood_blocks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "place_25000_wood_blocks"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_oak_planks"
+    },
+    "title": {
+      "text": "Wood Builder God",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Place 25,000 of any kind of wood blocks.",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}

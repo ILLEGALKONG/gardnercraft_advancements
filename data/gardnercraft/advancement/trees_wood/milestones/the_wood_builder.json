@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/wood_builder_god",
+  "criteria": {
+    "place_50000_wood_blocks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "place_50000_wood_blocks"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:crimson_planks"
+    },
+    "title": {
+      "text": "The Wood Builder",
+      "color": "red"
+    },
+    "description": {
+      "text": "Place 50,000 of any kind of wood blocks.",
+      "color": "red"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "x": 1,
+    "y": 0
+  }
+}

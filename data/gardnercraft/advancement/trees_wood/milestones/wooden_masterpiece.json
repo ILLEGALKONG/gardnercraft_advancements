@@ -1,0 +1,32 @@
+{
+  "parent": "gardnercraft:trees_wood/milestones/wood_builder_pro",
+  "criteria": {
+    "place_10000_wood_blocks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "place_10000_wood_blocks"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:cherry_planks"
+    },
+    "title": {
+      "text": "Wooden Masterpiece",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Place 10,000 of any kind of wood blocks.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 1,
+    "y": 0
+  }
+}
