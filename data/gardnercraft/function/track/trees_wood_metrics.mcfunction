@@ -639,7 +639,6 @@ scoreboard players operation $gc64_17 gc64_17 += @s gc64_18
 scoreboard players set $gc64_19 gc64_19 0
 scoreboard players operation $gc64_19 gc64_19 += @s gc64_19
 scoreboard players operation $gc64_19 gc64_19 += @s gc64_20
-execute if score $gc64_1 gc64_1 matches 64.. if score $gc64_3 gc64_3 matches 64.. if score $gc64_5 gc64_5 matches 64.. if score $gc64_7 gc64_7 matches 64.. if score $gc64_9 gc64_9 matches 64.. if score $gc64_11 gc64_11 matches 64.. if score $gc64_13 gc64_13 matches 64.. if score $gc64_15 gc64_15 matches 64.. if score $gc64_17 gc64_17 matches 64.. if score $gc64_19 gc64_19 matches 64.. run advancement grant @s only gardnercraft:trees_wood/boats/boat_empire
 scoreboard players set $gc64_21 gc64_21 0
 scoreboard players operation $gc64_21 gc64_21 += @s gc64_21
 scoreboard players operation $gc64_21 gc64_21 += @s gc64_22
@@ -676,7 +675,6 @@ scoreboard players operation $gc64_41 gc64_41 += @s gc64_42
 scoreboard players set $gc64_43 gc64_43 0
 scoreboard players operation $gc64_43 gc64_43 += @s gc64_43
 scoreboard players operation $gc64_43 gc64_43 += @s gc64_44
-execute if score $gc64_21 gc64_21 matches 64.. if score $gc64_23 gc64_23 matches 64.. if score $gc64_25 gc64_25 matches 64.. if score $gc64_27 gc64_27 matches 64.. if score $gc64_29 gc64_29 matches 64.. if score $gc64_31 gc64_31 matches 64.. if score $gc64_33 gc64_33 matches 64.. if score $gc64_35 gc64_35 matches 64.. if score $gc64_37 gc64_37 matches 64.. if score $gc64_39 gc64_39 matches 64.. if score $gc64_41 gc64_41 matches 64.. if score $gc64_43 gc64_43 matches 64.. run advancement grant @s only gardnercraft:trees_wood/buttons/wood_button_empire
 scoreboard players set $gc64_45 gc64_45 0
 scoreboard players operation $gc64_45 gc64_45 += @s gc64_45
 scoreboard players operation $gc64_45 gc64_45 += @s gc64_46
@@ -707,7 +705,6 @@ scoreboard players operation $gc64_61 gc64_61 += @s gc64_62
 scoreboard players set $gc64_63 gc64_63 0
 scoreboard players operation $gc64_63 gc64_63 += @s gc64_63
 scoreboard players operation $gc64_63 gc64_63 += @s gc64_64
-execute if score $gc64_45 gc64_45 matches 64.. if score $gc64_47 gc64_47 matches 64.. if score $gc64_49 gc64_49 matches 64.. if score $gc64_51 gc64_51 matches 64.. if score $gc64_53 gc64_53 matches 64.. if score $gc64_55 gc64_55 matches 64.. if score $gc64_57 gc64_57 matches 64.. if score $gc64_59 gc64_59 matches 64.. if score $gc64_61 gc64_61 matches 64.. if score $gc64_63 gc64_63 matches 64.. run advancement grant @s only gardnercraft:trees_wood/chest_boats/boat_with_chest_empire
 scoreboard players set $gc64_65 gc64_65 0
 scoreboard players operation $gc64_65 gc64_65 += @s gc64_65
 scoreboard players operation $gc64_65 gc64_65 += @s gc64_66
@@ -744,7 +741,6 @@ scoreboard players operation $gc64_85 gc64_85 += @s gc64_86
 scoreboard players set $gc64_87 gc64_87 0
 scoreboard players operation $gc64_87 gc64_87 += @s gc64_87
 scoreboard players operation $gc64_87 gc64_87 += @s gc64_88
-execute if score $gc64_65 gc64_65 matches 64.. if score $gc64_67 gc64_67 matches 64.. if score $gc64_69 gc64_69 matches 64.. if score $gc64_71 gc64_71 matches 64.. if score $gc64_73 gc64_73 matches 64.. if score $gc64_75 gc64_75 matches 64.. if score $gc64_77 gc64_77 matches 64.. if score $gc64_79 gc64_79 matches 64.. if score $gc64_81 gc64_81 matches 64.. if score $gc64_83 gc64_83 matches 64.. if score $gc64_85 gc64_85 matches 64.. if score $gc64_87 gc64_87 matches 64.. run advancement grant @s only gardnercraft:trees_wood/doors/wood_door_empire
 scoreboard players set $gc64_89 gc64_89 0
 scoreboard players operation $gc64_89 gc64_89 += @s gc64_89
 scoreboard players operation $gc64_89 gc64_89 += @s gc64_90
@@ -781,7 +777,6 @@ scoreboard players operation $gc64_109 gc64_109 += @s gc64_110
 scoreboard players set $gc64_111 gc64_111 0
 scoreboard players operation $gc64_111 gc64_111 += @s gc64_111
 scoreboard players operation $gc64_111 gc64_111 += @s gc64_112
-execute if score $gc64_89 gc64_89 matches 64.. if score $gc64_91 gc64_91 matches 64.. if score $gc64_93 gc64_93 matches 64.. if score $gc64_95 gc64_95 matches 64.. if score $gc64_97 gc64_97 matches 64.. if score $gc64_99 gc64_99 matches 64.. if score $gc64_101 gc64_101 matches 64.. if score $gc64_103 gc64_103 matches 64.. if score $gc64_105 gc64_105 matches 64.. if score $gc64_107 gc64_107 matches 64.. if score $gc64_109 gc64_109 matches 64.. if score $gc64_111 gc64_111 matches 64.. run advancement grant @s only gardnercraft:trees_wood/fences/wood_fence_empire
 scoreboard players set $gc64_113 gc64_113 0
 scoreboard players operation $gc64_113 gc64_113 += @s gc64_113
 scoreboard players operation $gc64_113 gc64_113 += @s gc64_114
@@ -818,7 +813,6 @@ scoreboard players operation $gc64_133 gc64_133 += @s gc64_134
 scoreboard players set $gc64_135 gc64_135 0
 scoreboard players operation $gc64_135 gc64_135 += @s gc64_135
 scoreboard players operation $gc64_135 gc64_135 += @s gc64_136
-execute if score $gc64_113 gc64_113 matches 64.. if score $gc64_115 gc64_115 matches 64.. if score $gc64_117 gc64_117 matches 64.. if score $gc64_119 gc64_119 matches 64.. if score $gc64_121 gc64_121 matches 64.. if score $gc64_123 gc64_123 matches 64.. if score $gc64_125 gc64_125 matches 64.. if score $gc64_127 gc64_127 matches 64.. if score $gc64_129 gc64_129 matches 64.. if score $gc64_131 gc64_131 matches 64.. if score $gc64_133 gc64_133 matches 64.. if score $gc64_135 gc64_135 matches 64.. run advancement grant @s only gardnercraft:trees_wood/fence_gates/wood_fence_gate_empire
 scoreboard players set $gc64_137 gc64_137 0
 scoreboard players operation $gc64_137 gc64_137 += @s gc64_137
 scoreboard players operation $gc64_137 gc64_137 += @s gc64_138
@@ -855,7 +849,6 @@ scoreboard players operation $gc64_157 gc64_157 += @s gc64_158
 scoreboard players set $gc64_159 gc64_159 0
 scoreboard players operation $gc64_159 gc64_159 += @s gc64_159
 scoreboard players operation $gc64_159 gc64_159 += @s gc64_160
-execute if score $gc64_137 gc64_137 matches 64.. if score $gc64_139 gc64_139 matches 64.. if score $gc64_141 gc64_141 matches 64.. if score $gc64_143 gc64_143 matches 64.. if score $gc64_145 gc64_145 matches 64.. if score $gc64_147 gc64_147 matches 64.. if score $gc64_149 gc64_149 matches 64.. if score $gc64_151 gc64_151 matches 64.. if score $gc64_153 gc64_153 matches 64.. if score $gc64_155 gc64_155 matches 64.. if score $gc64_157 gc64_157 matches 64.. if score $gc64_159 gc64_159 matches 64.. run advancement grant @s only gardnercraft:trees_wood/hanging_signs/hanging_sign_empire
 scoreboard players set $gc64_161 gc64_161 0
 scoreboard players operation $gc64_161 gc64_161 += @s gc64_161
 scoreboard players operation $gc64_161 gc64_161 += @s gc64_162
@@ -889,7 +882,6 @@ scoreboard players operation $gc64_179 gc64_179 += @s gc64_180
 scoreboard players set $gc64_181 gc64_181 0
 scoreboard players operation $gc64_181 gc64_181 += @s gc64_181
 scoreboard players operation $gc64_181 gc64_181 += @s gc64_182
-execute if score $gc64_161 gc64_161 matches 64.. if score $gc64_163 gc64_163 matches 64.. if score $gc64_165 gc64_165 matches 64.. if score $gc64_167 gc64_167 matches 64.. if score $gc64_169 gc64_169 matches 64.. if score $gc64_171 gc64_171 matches 64.. if score $gc64_173 gc64_173 matches 64.. if score $gc64_175 gc64_175 matches 64.. if score $gc64_177 gc64_177 matches 64.. if score $gc64_179 gc64_179 matches 64.. if score $gc64_181 gc64_181 matches 64.. run advancement grant @s only gardnercraft:trees_wood/leaves/leaf_empire
 scoreboard players set $gc64_183 gc64_183 0
 scoreboard players operation $gc64_183 gc64_183 += @s gc64_183
 scoreboard players operation $gc64_183 gc64_183 += @s gc64_184
@@ -926,7 +918,6 @@ scoreboard players operation $gc64_203 gc64_203 += @s gc64_204
 scoreboard players set $gc64_205 gc64_205 0
 scoreboard players operation $gc64_205 gc64_205 += @s gc64_205
 scoreboard players operation $gc64_205 gc64_205 += @s gc64_206
-execute if score $gc64_183 gc64_183 matches 64.. if score $gc64_185 gc64_185 matches 64.. if score $gc64_187 gc64_187 matches 64.. if score $gc64_189 gc64_189 matches 64.. if score $gc64_191 gc64_191 matches 64.. if score $gc64_193 gc64_193 matches 64.. if score $gc64_195 gc64_195 matches 64.. if score $gc64_197 gc64_197 matches 64.. if score $gc64_199 gc64_199 matches 64.. if score $gc64_201 gc64_201 matches 64.. if score $gc64_203 gc64_203 matches 64.. if score $gc64_205 gc64_205 matches 64.. run advancement grant @s only gardnercraft:trees_wood/logs/log_empire
 scoreboard players set $gc64_207 gc64_207 0
 scoreboard players operation $gc64_207 gc64_207 += @s gc64_207
 scoreboard players operation $gc64_207 gc64_207 += @s gc64_208
@@ -966,7 +957,6 @@ scoreboard players operation $gc64_229 gc64_229 += @s gc64_230
 scoreboard players set $gc64_231 gc64_231 0
 scoreboard players operation $gc64_231 gc64_231 += @s gc64_231
 scoreboard players operation $gc64_231 gc64_231 += @s gc64_232
-execute if score $gc64_207 gc64_207 matches 64.. if score $gc64_209 gc64_209 matches 64.. if score $gc64_211 gc64_211 matches 64.. if score $gc64_213 gc64_213 matches 64.. if score $gc64_215 gc64_215 matches 64.. if score $gc64_217 gc64_217 matches 64.. if score $gc64_219 gc64_219 matches 64.. if score $gc64_221 gc64_221 matches 64.. if score $gc64_223 gc64_223 matches 64.. if score $gc64_225 gc64_225 matches 64.. if score $gc64_227 gc64_227 matches 64.. if score $gc64_229 gc64_229 matches 64.. if score $gc64_231 gc64_231 matches 64.. run advancement grant @s only gardnercraft:trees_wood/planks/plank_empire
 scoreboard players set $gc64_233 gc64_233 0
 scoreboard players operation $gc64_233 gc64_233 += @s gc64_233
 scoreboard players operation $gc64_233 gc64_233 += @s gc64_234
@@ -1003,7 +993,6 @@ scoreboard players operation $gc64_253 gc64_253 += @s gc64_254
 scoreboard players set $gc64_255 gc64_255 0
 scoreboard players operation $gc64_255 gc64_255 += @s gc64_255
 scoreboard players operation $gc64_255 gc64_255 += @s gc64_256
-execute if score $gc64_233 gc64_233 matches 64.. if score $gc64_235 gc64_235 matches 64.. if score $gc64_237 gc64_237 matches 64.. if score $gc64_239 gc64_239 matches 64.. if score $gc64_241 gc64_241 matches 64.. if score $gc64_243 gc64_243 matches 64.. if score $gc64_245 gc64_245 matches 64.. if score $gc64_247 gc64_247 matches 64.. if score $gc64_249 gc64_249 matches 64.. if score $gc64_251 gc64_251 matches 64.. if score $gc64_253 gc64_253 matches 64.. if score $gc64_255 gc64_255 matches 64.. run advancement grant @s only gardnercraft:trees_wood/pressure_plates/wood_pressure_plate_empire
 scoreboard players set $gc64_257 gc64_257 0
 scoreboard players operation $gc64_257 gc64_257 += @s gc64_257
 scoreboard players operation $gc64_257 gc64_257 += @s gc64_258
@@ -1040,7 +1029,6 @@ scoreboard players operation $gc64_277 gc64_277 += @s gc64_278
 scoreboard players set $gc64_279 gc64_279 0
 scoreboard players operation $gc64_279 gc64_279 += @s gc64_279
 scoreboard players operation $gc64_279 gc64_279 += @s gc64_280
-execute if score $gc64_257 gc64_257 matches 64.. if score $gc64_259 gc64_259 matches 64.. if score $gc64_261 gc64_261 matches 64.. if score $gc64_263 gc64_263 matches 64.. if score $gc64_265 gc64_265 matches 64.. if score $gc64_267 gc64_267 matches 64.. if score $gc64_269 gc64_269 matches 64.. if score $gc64_271 gc64_271 matches 64.. if score $gc64_273 gc64_273 matches 64.. if score $gc64_275 gc64_275 matches 64.. if score $gc64_277 gc64_277 matches 64.. if score $gc64_279 gc64_279 matches 64.. run advancement grant @s only gardnercraft:trees_wood/shelves/shelf_empire
 scoreboard players set $gc64_281 gc64_281 0
 scoreboard players operation $gc64_281 gc64_281 += @s gc64_281
 scoreboard players operation $gc64_281 gc64_281 += @s gc64_282
@@ -1077,7 +1065,6 @@ scoreboard players operation $gc64_301 gc64_301 += @s gc64_302
 scoreboard players set $gc64_303 gc64_303 0
 scoreboard players operation $gc64_303 gc64_303 += @s gc64_303
 scoreboard players operation $gc64_303 gc64_303 += @s gc64_304
-execute if score $gc64_281 gc64_281 matches 64.. if score $gc64_283 gc64_283 matches 64.. if score $gc64_285 gc64_285 matches 64.. if score $gc64_287 gc64_287 matches 64.. if score $gc64_289 gc64_289 matches 64.. if score $gc64_291 gc64_291 matches 64.. if score $gc64_293 gc64_293 matches 64.. if score $gc64_295 gc64_295 matches 64.. if score $gc64_297 gc64_297 matches 64.. if score $gc64_299 gc64_299 matches 64.. if score $gc64_301 gc64_301 matches 64.. if score $gc64_303 gc64_303 matches 64.. run advancement grant @s only gardnercraft:trees_wood/signs/sign_empire
 scoreboard players set $gc64_305 gc64_305 0
 scoreboard players operation $gc64_305 gc64_305 += @s gc64_305
 scoreboard players operation $gc64_305 gc64_305 += @s gc64_306
@@ -1117,7 +1104,6 @@ scoreboard players operation $gc64_327 gc64_327 += @s gc64_328
 scoreboard players set $gc64_329 gc64_329 0
 scoreboard players operation $gc64_329 gc64_329 += @s gc64_329
 scoreboard players operation $gc64_329 gc64_329 += @s gc64_330
-execute if score $gc64_305 gc64_305 matches 64.. if score $gc64_307 gc64_307 matches 64.. if score $gc64_309 gc64_309 matches 64.. if score $gc64_311 gc64_311 matches 64.. if score $gc64_313 gc64_313 matches 64.. if score $gc64_315 gc64_315 matches 64.. if score $gc64_317 gc64_317 matches 64.. if score $gc64_319 gc64_319 matches 64.. if score $gc64_321 gc64_321 matches 64.. if score $gc64_323 gc64_323 matches 64.. if score $gc64_325 gc64_325 matches 64.. if score $gc64_327 gc64_327 matches 64.. if score $gc64_329 gc64_329 matches 64.. run advancement grant @s only gardnercraft:trees_wood/slabs/wood_slab_empire
 scoreboard players set $gc64_331 gc64_331 0
 scoreboard players operation $gc64_331 gc64_331 += @s gc64_331
 scoreboard players operation $gc64_331 gc64_331 += @s gc64_332
@@ -1157,7 +1143,6 @@ scoreboard players operation $gc64_353 gc64_353 += @s gc64_354
 scoreboard players set $gc64_355 gc64_355 0
 scoreboard players operation $gc64_355 gc64_355 += @s gc64_355
 scoreboard players operation $gc64_355 gc64_355 += @s gc64_356
-execute if score $gc64_331 gc64_331 matches 64.. if score $gc64_333 gc64_333 matches 64.. if score $gc64_335 gc64_335 matches 64.. if score $gc64_337 gc64_337 matches 64.. if score $gc64_339 gc64_339 matches 64.. if score $gc64_341 gc64_341 matches 64.. if score $gc64_343 gc64_343 matches 64.. if score $gc64_345 gc64_345 matches 64.. if score $gc64_347 gc64_347 matches 64.. if score $gc64_349 gc64_349 matches 64.. if score $gc64_351 gc64_351 matches 64.. if score $gc64_353 gc64_353 matches 64.. if score $gc64_355 gc64_355 matches 64.. run advancement grant @s only gardnercraft:trees_wood/stairs/wood_stair_empire
 scoreboard players set $gc64_357 gc64_357 0
 scoreboard players operation $gc64_357 gc64_357 += @s gc64_357
 scoreboard players operation $gc64_357 gc64_357 += @s gc64_358
@@ -1194,7 +1179,6 @@ scoreboard players operation $gc64_377 gc64_377 += @s gc64_378
 scoreboard players set $gc64_379 gc64_379 0
 scoreboard players operation $gc64_379 gc64_379 += @s gc64_379
 scoreboard players operation $gc64_379 gc64_379 += @s gc64_380
-execute if score $gc64_357 gc64_357 matches 64.. if score $gc64_359 gc64_359 matches 64.. if score $gc64_361 gc64_361 matches 64.. if score $gc64_363 gc64_363 matches 64.. if score $gc64_365 gc64_365 matches 64.. if score $gc64_367 gc64_367 matches 64.. if score $gc64_369 gc64_369 matches 64.. if score $gc64_371 gc64_371 matches 64.. if score $gc64_373 gc64_373 matches 64.. if score $gc64_375 gc64_375 matches 64.. if score $gc64_377 gc64_377 matches 64.. if score $gc64_379 gc64_379 matches 64.. run advancement grant @s only gardnercraft:trees_wood/stripped_logs/stripped_log_empire
 scoreboard players set $gc64_381 gc64_381 0
 scoreboard players operation $gc64_381 gc64_381 += @s gc64_381
 scoreboard players operation $gc64_381 gc64_381 += @s gc64_382
@@ -1228,7 +1212,6 @@ scoreboard players operation $gc64_399 gc64_399 += @s gc64_400
 scoreboard players set $gc64_401 gc64_401 0
 scoreboard players operation $gc64_401 gc64_401 += @s gc64_401
 scoreboard players operation $gc64_401 gc64_401 += @s gc64_402
-execute if score $gc64_381 gc64_381 matches 64.. if score $gc64_383 gc64_383 matches 64.. if score $gc64_385 gc64_385 matches 64.. if score $gc64_387 gc64_387 matches 64.. if score $gc64_389 gc64_389 matches 64.. if score $gc64_391 gc64_391 matches 64.. if score $gc64_393 gc64_393 matches 64.. if score $gc64_395 gc64_395 matches 64.. if score $gc64_397 gc64_397 matches 64.. if score $gc64_399 gc64_399 matches 64.. if score $gc64_401 gc64_401 matches 64.. run advancement grant @s only gardnercraft:trees_wood/stripped_wood/stripped_wood_empire
 scoreboard players set $gc64_403 gc64_403 0
 scoreboard players operation $gc64_403 gc64_403 += @s gc64_403
 scoreboard players operation $gc64_403 gc64_403 += @s gc64_404
@@ -1265,7 +1248,6 @@ scoreboard players operation $gc64_423 gc64_423 += @s gc64_424
 scoreboard players set $gc64_425 gc64_425 0
 scoreboard players operation $gc64_425 gc64_425 += @s gc64_425
 scoreboard players operation $gc64_425 gc64_425 += @s gc64_426
-execute if score $gc64_403 gc64_403 matches 64.. if score $gc64_405 gc64_405 matches 64.. if score $gc64_407 gc64_407 matches 64.. if score $gc64_409 gc64_409 matches 64.. if score $gc64_411 gc64_411 matches 64.. if score $gc64_413 gc64_413 matches 64.. if score $gc64_415 gc64_415 matches 64.. if score $gc64_417 gc64_417 matches 64.. if score $gc64_419 gc64_419 matches 64.. if score $gc64_421 gc64_421 matches 64.. if score $gc64_423 gc64_423 matches 64.. if score $gc64_425 gc64_425 matches 64.. run advancement grant @s only gardnercraft:trees_wood/trapdoors/wood_trapdoor_empire
 scoreboard players set $gc64_427 gc64_427 0
 scoreboard players operation $gc64_427 gc64_427 += @s gc64_427
 scoreboard players operation $gc64_427 gc64_427 += @s gc64_428
@@ -1299,7 +1281,6 @@ scoreboard players operation $gc64_445 gc64_445 += @s gc64_446
 scoreboard players set $gc64_447 gc64_447 0
 scoreboard players operation $gc64_447 gc64_447 += @s gc64_447
 scoreboard players operation $gc64_447 gc64_447 += @s gc64_448
-execute if score $gc64_427 gc64_427 matches 64.. if score $gc64_429 gc64_429 matches 64.. if score $gc64_431 gc64_431 matches 64.. if score $gc64_433 gc64_433 matches 64.. if score $gc64_435 gc64_435 matches 64.. if score $gc64_437 gc64_437 matches 64.. if score $gc64_439 gc64_439 matches 64.. if score $gc64_441 gc64_441 matches 64.. if score $gc64_443 gc64_443 matches 64.. if score $gc64_445 gc64_445 matches 64.. if score $gc64_447 gc64_447 matches 64.. run advancement grant @s only gardnercraft:trees_wood/wood/wood_empire
 execute if score @s gc_tw_logs_total matches 16.. run advancement grant @s only gardnercraft:trees_wood/milestones/lumberjack_enthusiast
 execute if score @s gc_tw_logs_total matches 64.. run advancement grant @s only gardnercraft:trees_wood/milestones/lumberjack_job
 execute if score @s gc_tw_logs_total matches 1000.. run advancement grant @s only gardnercraft:trees_wood/milestones/deforestation
