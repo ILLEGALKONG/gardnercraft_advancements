@@ -1,0 +1,22 @@
+# Checks Trees and Wood Empire challenges using current inventory only.
+# Row helpers only run after their overachiever parent is complete and before the Empire is granted.
+execute if entity @s[advancements={gardnercraft:trees_wood/logs/log_overachiever=true,gardnercraft:trees_wood/logs/log_empire=false}] run function gardnercraft:track/trees_wood_empire/logs
+execute if entity @s[advancements={gardnercraft:trees_wood/wood/wood_overachiever=true,gardnercraft:trees_wood/wood/wood_empire=false}] run function gardnercraft:track/trees_wood_empire/wood
+execute if entity @s[advancements={gardnercraft:trees_wood/stripped_logs/stripped_log_overachiever=true,gardnercraft:trees_wood/stripped_logs/stripped_log_empire=false}] run function gardnercraft:track/trees_wood_empire/stripped_logs
+execute if entity @s[advancements={gardnercraft:trees_wood/stripped_wood/stripped_wood_overachiever=true,gardnercraft:trees_wood/stripped_wood/stripped_wood_empire=false}] run function gardnercraft:track/trees_wood_empire/stripped_wood
+execute if entity @s[advancements={gardnercraft:trees_wood/planks/plank_overachiever=true,gardnercraft:trees_wood/planks/plank_empire=false}] run function gardnercraft:track/trees_wood_empire/planks
+execute if entity @s[advancements={gardnercraft:trees_wood/stairs/wood_stair_overachiever=true,gardnercraft:trees_wood/stairs/wood_stair_empire=false}] run function gardnercraft:track/trees_wood_empire/stairs
+execute if entity @s[advancements={gardnercraft:trees_wood/slabs/wood_slab_overachiever=true,gardnercraft:trees_wood/slabs/wood_slab_empire=false}] run function gardnercraft:track/trees_wood_empire/slabs
+execute if entity @s[advancements={gardnercraft:trees_wood/fences/wood_fence_overachiever=true,gardnercraft:trees_wood/fences/wood_fence_empire=false}] run function gardnercraft:track/trees_wood_empire/fences
+execute if entity @s[advancements={gardnercraft:trees_wood/fence_gates/wood_fence_gate_overachiever=true,gardnercraft:trees_wood/fence_gates/wood_fence_gate_empire=false}] run function gardnercraft:track/trees_wood_empire/fence_gates
+execute if entity @s[advancements={gardnercraft:trees_wood/doors/wood_door_overachiever=true,gardnercraft:trees_wood/doors/wood_door_empire=false}] run function gardnercraft:track/trees_wood_empire/doors
+execute if entity @s[advancements={gardnercraft:trees_wood/trapdoors/wood_trapdoor_overachiever=true,gardnercraft:trees_wood/trapdoors/wood_trapdoor_empire=false}] run function gardnercraft:track/trees_wood_empire/trapdoors
+execute if entity @s[advancements={gardnercraft:trees_wood/pressure_plates/wood_pressure_plate_overachiever=true,gardnercraft:trees_wood/pressure_plates/wood_pressure_plate_empire=false}] run function gardnercraft:track/trees_wood_empire/pressure_plates
+execute if entity @s[advancements={gardnercraft:trees_wood/buttons/wood_button_overachiever=true,gardnercraft:trees_wood/buttons/wood_button_empire=false}] run function gardnercraft:track/trees_wood_empire/buttons
+execute if entity @s[advancements={gardnercraft:trees_wood/signs/sign_overachiever=true,gardnercraft:trees_wood/signs/sign_empire=false}] run function gardnercraft:track/trees_wood_empire/signs
+execute if entity @s[advancements={gardnercraft:trees_wood/hanging_signs/hanging_sign_overachiever=true,gardnercraft:trees_wood/hanging_signs/hanging_sign_empire=false}] run function gardnercraft:track/trees_wood_empire/hanging_signs
+execute if entity @s[advancements={gardnercraft:trees_wood/boats/boat_overachiever=true,gardnercraft:trees_wood/boats/boat_empire=false}] run function gardnercraft:track/trees_wood_empire/boats
+execute if entity @s[advancements={gardnercraft:trees_wood/chest_boats/boat_with_chest_overachiever=true,gardnercraft:trees_wood/chest_boats/boat_with_chest_empire=false}] run function gardnercraft:track/trees_wood_empire/chest_boats
+execute if entity @s[advancements={gardnercraft:trees_wood/shelves/shelf_overachiever=true,gardnercraft:trees_wood/shelves/shelf_empire=false}] run function gardnercraft:track/trees_wood_empire/shelves
+execute if entity @s[advancements={gardnercraft:trees_wood/leaves/leaf_overachiever=true,gardnercraft:trees_wood/leaves/leaf_empire=false}] run function gardnercraft:track/trees_wood_empire/leaves
+execute if entity @s[advancements={gardnercraft:trees_wood/saplings/sapling_overachiever=true,gardnercraft:trees_wood/saplings/sapling_empire=false}] run function gardnercraft:track/trees_wood_empire/saplings

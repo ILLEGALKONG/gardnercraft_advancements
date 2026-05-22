@@ -1,6 +1,5 @@
 # Removes and recreates every Gardnercraft scoreboard objective.
 # Run this manually in a test world: /function gardnercraft:admin/reset_scoreboards
-function gardnercraft:admin/clear_legacy_empire_scoreboards
 scoreboard objectives remove gc_tw_oak_log
 scoreboard objectives remove gc_tw_spruce_log
 scoreboard objectives remove gc_tw_birch_log
@@ -45,6 +44,7 @@ scoreboard objectives remove gc_tw_chest_boats_unique
 scoreboard objectives remove gc_tw_shelves_unique
 scoreboard objectives remove gc_tw_leaves_unique
 scoreboard objectives remove gc_tw_saplings_unique
+scoreboard objectives remove gc_tw_empire_ready
 scoreboard objectives remove gc_tw_leaf_empire_ready
 scoreboard objectives remove gc_tw_sapling_empire_ready
 scoreboard objectives remove gc_tw_sticks_picked

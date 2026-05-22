@@ -1,5 +1,4 @@
 # One-time cleanup for removed beta Empire tracking scoreboards from older test worlds.
-scoreboard objectives remove gc_tw_empire_ready
 scoreboard objectives remove gc_twe_001
 scoreboard objectives remove gc_twe_002
 scoreboard objectives remove gc_twe_003
