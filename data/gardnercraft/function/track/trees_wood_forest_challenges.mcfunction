@@ -357,7 +357,6 @@ execute if score @s gc_fc_speed_timer matches 1.. if score @s gc_fc_log_mined_de
 execute if score @s gc_fc_speed_timer matches 1.. run scoreboard players remove @s gc_fc_speed_timer 1
 execute if score @s gc_fc_speed_count matches 64.. run advancement grant @s only gardnercraft:trees_wood/forest/speedrunner_lumberjack
 scoreboard players operation @s gc_fc_log_mined_prev = @s gc_fc_log_mined_total
-execute if entity @s[advancements={gardnercraft:trees_wood/logs/log_empire=true}] run advancement grant @s only gardnercraft:trees_wood/forest/wood_empire
 execute if biome ~ ~ ~ minecraft:forest run scoreboard players set @s gc_fcb_01 1
 execute if biome ~ ~ ~ minecraft:flower_forest run scoreboard players set @s gc_fcb_02 1
 execute if biome ~ ~ ~ minecraft:birch_forest run scoreboard players set @s gc_fcb_03 1

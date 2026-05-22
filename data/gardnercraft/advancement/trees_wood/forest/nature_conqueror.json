@@ -1,5 +1,5 @@
 {
-  "parent": "gardnercraft:trees_wood/forest/wood_empire",
+  "parent": "gardnercraft:trees_wood/forest/speedrunner_lumberjack",
   "criteria": {
     "nature_conqueror": {
       "trigger": "minecraft:impossible"
