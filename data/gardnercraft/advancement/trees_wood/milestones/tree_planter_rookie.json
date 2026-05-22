@@ -1,28 +1,28 @@
 {
-  "parent": "gardnercraft:trees_wood/milestones/wood_builder_rookie",
+  "parent": "gardnercraft:trees_wood/saplings/sapling",
   "criteria": {
-    "place_500_wood_blocks": {
+    "plant_50_saplings": {
       "trigger": "minecraft:impossible"
     }
   },
   "requirements": [
     [
-      "place_500_wood_blocks"
+      "plant_50_saplings"
     ]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:spruce_planks"
+      "id": "minecraft:oak_sapling"
     },
     "title": {
-      "text": "Wood Builder Enthusiast",
-      "color": "blue"
+      "text": "Tree Planter Rookie",
+      "color": "green"
     },
     "description": {
-      "text": "Place 500 of any kind of wood blocks.",
+      "text": "Plant 50 saplings and grow them.",
       "color": "gray"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false,

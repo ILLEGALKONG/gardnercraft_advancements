@@ -1,26 +1,26 @@
 {
-  "parent": "gardnercraft:trees_wood/milestones/lumberjack_god",
+  "parent": "gardnercraft:trees_wood/milestones/tree_planter_god",
   "criteria": {
-    "break_100000_logs": {
+    "plant_5000_saplings": {
       "trigger": "minecraft:impossible"
     }
   },
   "requirements": [
     [
-      "break_100000_logs"
+      "plant_5000_saplings"
     ]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:golden_axe"
+      "id": "minecraft:flowering_azalea"
     },
     "title": {
-      "text": "The Lumberjack",
-      "color": "dark_red"
+      "text": "The Tree Planter",
+      "color": "red"
     },
     "description": {
-      "text": "Break 100,000 logs of any wood type.",
-      "color": "dark_red"
+      "text": "Plant 5,000 saplings and grow them.",
+      "color": "red"
     },
     "frame": "challenge",
     "show_toast": true,

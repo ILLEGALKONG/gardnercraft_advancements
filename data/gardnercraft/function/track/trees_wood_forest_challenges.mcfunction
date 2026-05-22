@@ -318,6 +318,24 @@ execute if score @s gc_fc_build_total matches 5000.. run advancement grant @s on
 execute if score @s gc_fc_build_total matches 10000.. run advancement grant @s only gardnercraft:trees_wood/milestones/wooden_masterpiece
 execute if score @s gc_fc_build_total matches 25000.. run advancement grant @s only gardnercraft:trees_wood/milestones/wood_builder_god
 execute if score @s gc_fc_build_total matches 50000.. run advancement grant @s only gardnercraft:trees_wood/milestones/the_wood_builder
+scoreboard players set @s gc_fc_tree_plant_total 0
+execute if score @s gc_fct_01 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_01
+execute if score @s gc_fct_02 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_02
+execute if score @s gc_fct_03 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_03
+execute if score @s gc_fct_04 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_04
+execute if score @s gc_fct_05 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_05
+execute if score @s gc_fct_06 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_06
+execute if score @s gc_fct_07 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_07
+execute if score @s gc_fct_08 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_08
+execute if score @s gc_fct_09 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_09
+execute if score @s gc_fct_10 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_10
+execute if score @s gc_fct_11 matches 0.. run scoreboard players operation @s gc_fc_tree_plant_total += @s gc_fct_11
+execute if score @s gc_fc_tree_plant_total matches 50.. run advancement grant @s only gardnercraft:trees_wood/milestones/tree_planter_rookie
+execute if score @s gc_fc_tree_plant_total matches 100.. run advancement grant @s only gardnercraft:trees_wood/milestones/tree_planter_enthusiast
+execute if score @s gc_fc_tree_plant_total matches 250.. run advancement grant @s only gardnercraft:trees_wood/milestones/tree_planter_pro
+execute if score @s gc_fc_tree_plant_total matches 500.. run advancement grant @s only gardnercraft:trees_wood/milestones/reforestation
+execute if score @s gc_fc_tree_plant_total matches 1000.. run advancement grant @s only gardnercraft:trees_wood/milestones/tree_planter_god
+execute if score @s gc_fc_tree_plant_total matches 5000.. run advancement grant @s only gardnercraft:trees_wood/milestones/the_tree_planter
 scoreboard players set @s gc_fc_build_all 1
 execute unless score @s gc_fcpf_01 matches 1 run scoreboard players set @s gc_fc_build_all 0
 execute unless score @s gc_fcpf_02 matches 1 run scoreboard players set @s gc_fc_build_all 0

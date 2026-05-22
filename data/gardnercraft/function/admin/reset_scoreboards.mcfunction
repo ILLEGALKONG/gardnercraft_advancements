@@ -1,5 +1,4 @@
-# Removes and recreates every Gardnercraft scoreboard objective.
-# Run this manually in a test world: /function gardnercraft:admin/reset_scoreboards
+# Removes Gardnercraft scoreboard objectives so a test world can rebuild them cleanly.
 scoreboard objectives remove gc_tw_oak_log
 scoreboard objectives remove gc_tw_spruce_log
 scoreboard objectives remove gc_tw_birch_log
@@ -71,6 +70,18 @@ scoreboard objectives remove gc_fc_lost_night_ticks
 scoreboard objectives remove gc_fc_naked_ticks
 scoreboard objectives remove gc_fc_totems
 scoreboard objectives remove gc_fc_build_total
+scoreboard objectives remove gc_fc_tree_plant_total
+scoreboard objectives remove gc_fct_01
+scoreboard objectives remove gc_fct_02
+scoreboard objectives remove gc_fct_03
+scoreboard objectives remove gc_fct_04
+scoreboard objectives remove gc_fct_05
+scoreboard objectives remove gc_fct_06
+scoreboard objectives remove gc_fct_07
+scoreboard objectives remove gc_fct_08
+scoreboard objectives remove gc_fct_09
+scoreboard objectives remove gc_fct_10
+scoreboard objectives remove gc_fct_11
 scoreboard objectives remove gc_fcb_01
 scoreboard objectives remove gc_fcb_02
 scoreboard objectives remove gc_fcb_03
@@ -331,4 +342,3 @@ scoreboard objectives remove gc_fcu_16_09
 scoreboard objectives remove gc_fcu_16_10
 scoreboard objectives remove gc_fcu_16_11
 scoreboard objectives remove gc_fcu_16_12
-function gardnercraft:load

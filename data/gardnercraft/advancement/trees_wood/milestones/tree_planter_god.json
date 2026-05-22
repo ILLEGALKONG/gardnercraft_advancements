@@ -1,25 +1,25 @@
 {
-  "parent": "gardnercraft:trees_wood/milestones/wood_builder_pro",
+  "parent": "gardnercraft:trees_wood/milestones/reforestation",
   "criteria": {
-    "place_10000_wood_blocks": {
+    "plant_1000_saplings": {
       "trigger": "minecraft:impossible"
     }
   },
   "requirements": [
     [
-      "place_10000_wood_blocks"
+      "plant_1000_saplings"
     ]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:cherry_planks"
+      "id": "minecraft:pale_oak_sapling"
     },
     "title": {
-      "text": "Wooden Masterpiece",
+      "text": "Tree Planter God",
       "color": "dark_purple"
     },
     "description": {
-      "text": "Place 10,000 of any kind of wood blocks.",
+      "text": "Plant 1,000 saplings and grow them.",
       "color": "dark_purple"
     },
     "frame": "challenge",
