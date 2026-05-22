@@ -7,4 +7,6 @@ function gardnercraft:track/trees_wood_metrics
 function gardnercraft:track/trees_wood_forest_challenges
 function gardnercraft:track/leaves_saplings_metrics
 function gardnercraft:grant/trees_wood_score_milestones
-function gardnercraft:track/trees_wood_empire_inventory
+scoreboard players add @s gc_tw_empire_timer 1
+execute if score @s gc_tw_empire_timer matches 5.. run function gardnercraft:track/trees_wood_empire_inventory
+execute if score @s gc_tw_empire_timer matches 5.. run scoreboard players set @s gc_tw_empire_timer 0

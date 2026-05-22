@@ -45,6 +45,9 @@ scoreboard objectives remove gc_tw_shelves_unique
 scoreboard objectives remove gc_tw_leaves_unique
 scoreboard objectives remove gc_tw_saplings_unique
 scoreboard objectives remove gc_tw_empire_ready
+scoreboard objectives remove gc_tw_empire_item_total
+scoreboard objectives remove gc_tw_empire_timer
+scoreboard objectives remove gc_tw_empire_row_cursor
 scoreboard objectives remove gc_tw_leaf_empire_ready
 scoreboard objectives remove gc_tw_sapling_empire_ready
 scoreboard objectives remove gc_tw_sticks_picked
