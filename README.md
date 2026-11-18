@@ -20,6 +20,8 @@ Target version:
 Minecraft Java Edition 26.3+
 ```
 
+This branch targets 26.3 and later. Minecraft 26.1 and 26.2 use a different advancement predicate format and are not supported; 1.21.11 and earlier are also not supported by this branch.
+
 ## Related Projects
 
 - [Gardnercraft Mod](https://github.com/ILLEGALKONG/gardnercraft_mod)
@@ -29,22 +31,56 @@ Minecraft Java Edition 26.3+
 
 ## Installation
 
-To install the datapack manually:
+### Requirements
 
-1. Download or clone this repository.
-2. Place the datapack folder into your world's `datapacks` folder.
-3. Make sure `pack.mcmeta` is directly inside the datapack folder.
-4. Run this in game:
+- Minecraft Java Edition 26.3 or later
+- [Gardnercraft Mod](https://github.com/ILLEGALKONG/gardnercraft_mod) on the server, for the custom reward item
+
+> **Note:** Some rewards reference the Gardnercraft item `gardnercraft:gardnercraft_armor_trim_smithing_template`. If no 26.3-compatible mod registers that item, the server will refuse to load the datapack.
+
+### Download
+
+Get the latest version from the [Releases page](https://github.com/ILLEGALKONG/gardnercraft_advancements/releases/latest) and download the `gardnercraft-advancements-<datapack-version>+<minecraft-version>.zip` asset.
+
+### Install on a server
+
+1. Place the downloaded zip in your server's `world/datapacks/` folder. There is no need to unzip it.
+2. Restart the server, or run `/reload` if it is already running.
+3. Confirm the datapack is enabled:
+
+```mcfunction
+/datapack list
+```
+
+The datapack ID is the zip file name. Rename the zip before uploading if you want a different ID.
+
+### Install in singleplayer
+
+Place the zip in your world's `datapacks` folder (`saves/<world>/datapacks/`), then run:
 
 ```mcfunction
 /reload
 ```
 
-5. Confirm it loaded:
+### Install from source
 
-```mcfunction
-/datapack list
+Clone this repository and place the folder that contains `pack.mcmeta` into `world/datapacks/`. Do not nest it inside another folder:
+
+```text
+world/datapacks/
+└── gardnercraft_advancements/
+    ├── pack.mcmeta
+    ├── README.md
+    └── data/
 ```
+
+Then restart the server or run `/reload`.
+
+### Updating
+
+Replace the old zip or folder in `world/datapacks/` with the new version. If the file name changed, delete the old one so both versions are not loaded at once. Run `/reload` or restart afterwards.
+
+## Repository Layout
 
 Important conventions:
 
