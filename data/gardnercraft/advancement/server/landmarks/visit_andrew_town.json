@@ -4,21 +4,19 @@
     "visit_andrew_town": {
       "trigger": "minecraft:location",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "position": {
-                  "x": { "min": 31, "max": 305 },
-                  "y": { "min": 38, "max": 125 },
-                  "z": { "min": 687, "max": 956 }
-                }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "x": { "min": 31, "max": 305 },
+                "y": { "min": 38, "max": 125 },
+                "z": { "min": 687, "max": 956 }
               }
             }
           }
-        ]
+        }
       }
     }
   },

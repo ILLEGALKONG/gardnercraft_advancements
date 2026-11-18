@@ -17,7 +17,7 @@ This pack is inspired by large advancement packs in scope, but the content, cate
 Target version:
 
 ```text
-Minecraft Java Edition 1.21.11
+Minecraft Java Edition 26.3+
 ```
 
 ## Related Projects

@@ -1,4 +1,4 @@
-execute store result score @s gc_fc_daytime run time query daytime
+execute store result score @s gc_fc_daytime run time of minecraft:overworld query minecraft:day
 scoreboard players set @s gc_fc_new_tick 0
 execute unless score @s gc_fc_daytime = @s gc_fc_last_daytime run scoreboard players set @s gc_fc_new_tick 1
 scoreboard players set @s gc_fc_in_forest 0

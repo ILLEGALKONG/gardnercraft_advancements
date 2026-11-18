@@ -4,21 +4,19 @@
     "visit_masterczyn_base": {
       "trigger": "minecraft:location",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "position": {
-                  "x": { "min": -433, "max": -50 },
-                  "y": { "min": 47, "max": 161 },
-                  "z": { "min": -4823, "max": -4538 }
-                }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "x": { "min": -433, "max": -50 },
+                "y": { "min": 47, "max": 161 },
+                "z": { "min": -4823, "max": -4538 }
               }
             }
           }
-        ]
+        }
       }
     }
   },

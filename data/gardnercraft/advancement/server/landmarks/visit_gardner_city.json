@@ -4,21 +4,19 @@
     "visit_gardner_city": {
       "trigger": "minecraft:location",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "position": {
-                  "x": { "min": 306, "max": 475 },
-                  "y": { "min": 224, "max": 320 },
-                  "z": { "min": -685, "max": -472 }
-                }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "x": { "min": 306, "max": 475 },
+                "y": { "min": 224, "max": 320 },
+                "z": { "min": -685, "max": -472 }
               }
             }
           }
-        ]
+        }
       }
     }
   },

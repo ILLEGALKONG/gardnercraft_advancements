@@ -4,21 +4,19 @@
     "visit_atrain2812_base": {
       "trigger": "minecraft:location",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "position": {
-                  "x": { "min": -1905, "max": -1696 },
-                  "y": { "min": 210, "max": 292 },
-                  "z": { "min": -186, "max": -11 }
-                }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "x": { "min": -1905, "max": -1696 },
+                "y": { "min": 210, "max": 292 },
+                "z": { "min": -186, "max": -11 }
               }
             }
           }
-        ]
+        }
       }
     }
   },
